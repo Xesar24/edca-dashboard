@@ -11,6 +11,8 @@ var puertos = require('./routes/puertos');
 //var redcompartida = require('./routes/redcompartida');
 var red = require('./routes/red');
 
+var nuevoaeropuerto = require('./routes/nuevoaeropuerto');
+
 var app = express();
 
 // view engine setup
@@ -23,6 +25,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/nuevoaeropuerto/static',express.static(path.join(__dirname, 'public')));
 app.use('/contratacionesabiertas/static',express.static(path.join(__dirname, 'public')));
 app.use('/puertosabiertos/static',express.static(path.join(__dirname, 'public_puertos')));
 app.use('/redcompartida/static',express.static(path.join(__dirname, 'public_redcompartida')));
@@ -31,6 +34,8 @@ app.use('/redcompartida/static',express.static(path.join(__dirname, 'public_redc
 app.use('/contratacionesabiertas', routes);
 app.use('/puertosabiertos', puertos);
 app.use('/redcompartida', red)
+app.use('/nuevoaeropuerto', nuevoaeropuerto);
+
 //app.use('/redcompartida', redcompartida);
 
 // catch 404 and forward to error handler

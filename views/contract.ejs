@@ -26,6 +26,23 @@
             }
 
         </style>
+
+        <style>
+        /* Tooltip */
+        .implementacion + .tooltip > .tooltip-inner {
+            background-color: white;
+            color: #4a4a4a;
+            padding: 15px;
+            font-size: 10px;
+            font: 10px Open Sans;
+            pointer-events: none;
+        }
+        /* Tooltip on top */
+        .implementacion + .tooltip.top > .tooltip-arrow {
+            border-top: 0px solid green;
+        }
+        </style>
+
         <title>Contrataciones Abiertas</title>
     </head>
     <body>
@@ -104,7 +121,7 @@
                                 <img class="hover-image" src="/contratacionesabiertas/static/images/ic-implementacion.png">
                                 <a href="<%= "/contratacionesabiertas/contrato/"+info.cpid+"/implementacion" %>">Implementación</a>
                             <%}else{%>
-                                <img src="/contratacionesabiertas/static/images/ic-menu-implementacion.png"> Implementación
+                                <img src="/contratacionesabiertas/static/images/ic-menu-implementacion.png"><span class="implementacion" data-toggle="tooltip" data-placement="top" title="Los datos se publicarán conforme se generen y en las siguientes actualizaciones"> Implementación</span>
                                 <%}%>
                             </li>
                         </ul>
@@ -139,5 +156,10 @@
             $('.panel-group').on('hidden.bs.collapse', toggleIcon);
             $('.panel-group').on('shown.bs.collapse', toggleIcon);
         </script>
+        <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
+</script>
     </body>
 </html>

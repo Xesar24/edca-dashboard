@@ -125,7 +125,7 @@
         <div class="row">
             <div class="col-md-12">
                 <ul class="breadcrumb">
-                    <li><a href="http://contratacionesabiertas.mx"><i class="glyphicon glyphicon-home"></i></a></li>
+                    <li><a href="https://datos.gob.mx"><i class="glyphicon glyphicon-home"></i></a></li>
                     <li><a href="https://datos.gob.mx/nuevoaeropuerto" style="text-transform: none;">Nuevo Aeropuerto Internacional de la Ciudad de México</a></li>
                 </ul>
             </div>
@@ -183,7 +183,6 @@
                                     <tr>
                                         <th>Procedimiento de contratación</th>
                                         <th>Monto sin IVA</th>
-                                        <th>Contratos</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -191,35 +190,27 @@
                                     <tr>
                                         <td> <%= metadata.total_procedimiento[0].procurementmethod %>*</td>
                                         <td> <strong>$<%= formatAmount( metadata.total_procedimiento[0].total ) %></strong></td>
-                                        <td style="text-align: center"> <%= metadata.total_procedimiento[0].conteo%></td>
                                     </tr>
                                     <tr>
                                         <td> <%= metadata.total_procedimiento[1].procurementmethod %></td>
                                         <td> <strong>$<%= formatAmount( metadata.total_procedimiento[1].total ) %></strong></td>
-                                        <td style="text-align: center"> <%= metadata.total_procedimiento[1].conteo%></td>
                                     </tr>
                                     <tr>
                                         <td> <%= metadata.total_procedimiento[2].procurementmethod %>**</td>
                                         <td> <strong>$<%= formatAmount( metadata.total_procedimiento[2].total ) %></strong></td>
-                                        <td style="text-align: center"> <%= metadata.total_procedimiento[2].conteo%></td>
                                     </tr>
                                     <tr>
                                         <td> <%= metadata.total_procedimiento[3].procurementmethod %></td>
                                         <td> <strong>$<%= formatAmount( metadata.total_procedimiento[3].total ) %></strong></td>
-                                        <td style="text-align: center"> <%= metadata.total_procedimiento[3].conteo%></td>
                                     </tr>
                                     <tr>
                                         <td> <%= metadata.total_procedimiento[4].procurementmethod %></td>
                                         <td> <strong>$<%= formatAmount( metadata.total_procedimiento[4].total ) %></strong></td>
-                                        <td style="text-align: center"> <%= metadata.total_procedimiento[4].conteo%></td>
                                     </tr>
-
-
 
                                     <tr>
                                         <td><strong>Total</strong></td>
                                         <td><strong>$<%= formatAmount( metadata.contract_value_amount_total )%></strong></td>
-                                        <td style="text-align: center;"><%= metadata.cp_count %></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -252,7 +243,6 @@
                     <div class="col-sm-6">
                         <div id="donutchart2" style="text-align: center; color: #fff; font-size: 12pt; height: 400px;"></div>
 
-
                         <ul class="chart-legend">
                             <li><span class="circle" style="background-color: #663399"></span>Obra pública</li>
                             <li><span class="circle" style="background-color: #ff6600"></span>Servicios relacionados con la obra</li>
@@ -270,23 +260,19 @@
                                     <tr>
                                         <th>Categoría de contratación</th>
                                         <th>Monto sin IVA</th>
-                                        <th>Contratos</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-
 
                                     <% for (var i=0; i < metadata.destinos.length; i++){%>
                                     <tr>
                                         <td><%= metadata.destinos[i].destino %></td>
                                         <td><strong>$<%= formatAmount( metadata.destinos[i].total_amount) %></strong></td>
-                                        <td style="text-align: center"><%= metadata.destinos[i].conteo%></td>
                                     </tr>
                                     <%}%>
                                     <tr>
                                         <td><strong>Total</strong></td>
                                         <td><strong>$<%= formatAmount( metadata.contract_value_amount_total )%></strong></td>
-                                        <td style="text-align: center"><%= metadata.cp_count %></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -295,7 +281,7 @@
                         <div class="row" >
                             <div class="col-sm-6"></div>
                             <div class="col-sm-6">
-                                <small>Actualización a noviembre de 2016</small>
+                                <small>Actualización a febrero de 2017.</small>
                             </div>
                         </div>
 
@@ -595,7 +581,7 @@
 <div class="container">
     <h1 id="lista">Lista de contratos</h1>
     <p style="font-size: large">Busca y explora los datos de las diferentes etapas para cada contratación</p>
-    <small><a href="../acerca" >Conoce más</a> sobre la implementación del Estándar de Datos de Contrataciones Abiertas en el NAICM</small>
+    <small><a href="/contratacionesabiertas/acerca" >Conoce más</a> sobre la implementación del Estándar de Datos de Contrataciones Abiertas en el NAICM</small>
     <div class="row" id="busqueda_contratos">
         <div class="col-md-12">
             <form class="form-inline search-form" >

@@ -393,4 +393,10 @@ router.get('/d3-bubble-chart-data', function (req, res) {
     });
 });
 
+/* DISCLAIMER */
+router.get('/acerca', function (req, res ) {
+    res.render ('acerca');
+});
+
+
 module.exports = router;

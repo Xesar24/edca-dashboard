@@ -5,9 +5,9 @@
     <!-- Bootstrap core CSS -->
     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/stylesheets/main.css'/>
-    <link rel="import" href="https://cdn.datos.gob.mx/qa/bower_components/polymer/polymer.html">
-    <link rel="import" href="https://cdn.datos.gob.mx/qa/bower_components/dgm-navbar/dgm-navbar.html">
-    <link rel="import" href="https://cdn.datos.gob.mx/qa/bower_components/dgm-footer/dgm-footer.html">
+    <link rel="import" href="<%= process.env.CDN_URL %>/qa/bower_components/polymer/polymer.html">
+    <link rel="import" href="<%= process.env.CDN_URL %>/qa/bower_components/dgm-navbar/dgm-navbar.html">
+    <link rel="import" href="<%= process.env.CDN_URL %>/qa/bower_components/dgm-footer/dgm-footer.html">
 
     <title>Contrataciones Abiertas - Entidad compradora</title>
 </head>
@@ -42,6 +42,6 @@
 <dgm-footer></dgm-footer>
 <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://cdn.datos.gob.mx/qa/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+<script type="text/javascript" src="<%= process.env.CDN_URL %>/qa/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 </body>
 </html>

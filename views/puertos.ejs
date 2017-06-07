@@ -12,9 +12,9 @@
     <link href="/puertosabiertos/static/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
     <link rel='stylesheet' href='/puertosabiertos/static/stylesheets/main.css'>
     <link rel="stylesheet" href="/puertosabiertos/static/stylesheets/dashboard.css">
-    <link rel="import" href="https://cdn.datos.gob.mx/qa/bower_components/polymer/polymer.html">
-    <link rel="import" href="https://cdn.datos.gob.mx/qa/bower_components/dgm-navbar/dgm-navbar.html">
-    <link rel="import" href="https://cdn.datos.gob.mx/qa/bower_components/dgm-footer/dgm-footer.html">
+    <link rel="import" href="<%= process.env.CDN_URL %>/qa/bower_components/polymer/polymer.html">
+    <link rel="import" href="<%= process.env.CDN_URL %>/qa/bower_components/dgm-navbar/dgm-navbar.html">
+    <link rel="import" href="<%= process.env.CDN_URL %>/qa/bower_components/dgm-footer/dgm-footer.html">
     <link rel="stylesheet" href="/puertosabiertos/static/bower_components/bootstrap-vertical-tabs/bootstrap.vertical-tabs.css">
 
 
@@ -474,7 +474,7 @@
 <script src="/puertosabiertos/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/puertosabiertos/static/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
 
-<script type="text/javascript" src="https://cdn.datos.gob.mx/qa/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+<script type="text/javascript" src="<%= process.env.CDN_URL %>/qa/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 
 
 <script>

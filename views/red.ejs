@@ -473,9 +473,9 @@
         var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/i;
         return text.replace(exp,"<a href='$1'>$1</a>");
     }
-    // $(document).ready(function(){
-    //     $('[data-toggle="tooltip"]').tooltip();
-    // });
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
     function draw_chart(l) {
         var datos = jQuery.extend(true, {}, dt);
 

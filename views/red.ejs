@@ -441,7 +441,7 @@
 </div>
 
 
-<div style="opacity: 0;" class="ttip"></div>
+<div id="d3Tooltip" style="opacity: 0;" class="ttip"></div>
 
 <dgm-footer></dgm-footer>
 
@@ -473,9 +473,9 @@
         var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/i;
         return text.replace(exp,"<a href='$1'>$1</a>");
     }
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+    // $(document).ready(function(){
+    //     $('[data-toggle="tooltip"]').tooltip();
+    // });
     function draw_chart(l) {
         var datos = jQuery.extend(true, {}, dt);
 
@@ -494,9 +494,7 @@
                 width = 1100 - margin.right - margin.left,
                 height = multiplier*100 - margin.top - margin.bottom;
 
-        var tt = d3.select("body").append("div")
-                .attr("class", "ttip")
-                .style("opacity", 0);
+        var tt = d3.select("#d3Tooltip");
 
         var infobox = d3.select("#chart").append("div")
                 .attr("class", "infobox")

@@ -264,7 +264,7 @@ BubbleChart = (function() {
             x_position = _this.width * position / total_slots;
             _this.group_centers[i] = {
                 x: x_position,
-                y: _this.height / 1.6 // Separación entre las etiquetas y los nodos
+                y: _this.height / 1.9 // Separación entre las etiquetas y los nodos
             };
             _this.group_labels[i] = x_position;
             position = position + 1;

@@ -687,22 +687,6 @@
 <script type="text/javascript" src="/contratacionesabiertas/static/javascripts/js/custom.js"></script>
 <script>
 
-/*
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip({
-            delay: { "show": 0, "hide": 0 },ban
-            html: true,
-            //placement: 'rigth',
-            placement: function(t_el, el) {
-                return (typeof $(el).data('placement') === 'undefined') ? 'bottom' :  $(el).data('placement');
-            },
-            trigger: 'hover',
-            template: '<div class="tooltip" role="tooltip" style="min-width: 150px; background-color: transparent;">' +
-            '<div class="tooltip-inner" style="border-radius: 2px; min-height: 40px; background-color: white; color: black; ' +
-            'text-align: left; font-size: 12px; font-family: Open Sans"></div></div>'
-        })
-    });*/
-
 $('.progress-bar').tooltipster({
     //anchor: 'bottom-left',
     delay : 0,
@@ -720,7 +704,7 @@ $('.progress-bar').tooltipster({
     })();
 
     $('#naicm').click(function () {
-        window.location.href= "https://datos.gob.mx/busca/dataset/concentrado-de-contratos-y-convenios-del-nuevo-aeropuerto-de-la-ciudad-de-mexico";
+        window.open("https://datos.gob.mx/busca/dataset/concentrado-de-contratos-y-convenios-del-nuevo-aeropuerto-de-la-ciudad-de-mexico", "_blank");
     });
 </script>
 </body>

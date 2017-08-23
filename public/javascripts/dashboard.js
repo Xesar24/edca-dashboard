@@ -102,9 +102,9 @@ $(document).ready(function () {
                         shadow: false
                     },
                     seriesColors: [
-                        '#ff6600', // Licitación
-                        '#663399', // ITP
-                        '#00cc99' // adjudicación
+                        '#00cc99', // Adquisición de bienes y servicios
+                        '#ff6600', // Obra pública
+                        '#663399' // Servicios relacionados con la obra                        
                     ]
                 },
                 grid: {
@@ -293,9 +293,9 @@ function drawSeriesChart() {
              window.location.href = "/contratacionesabiertas/contrato/"+(data[selectedItem.row].contractingprocess_id)+"/planeacion";
 
          }
-        
+
         google.visualization.events.addListener(chart, 'select', selectHandler);
-        
+
         //chart.draw( data  , options);
 
         var dt = google.visualization.arrayToDataTable(newData);
@@ -323,8 +323,3 @@ function drawSeriesChart() {
 
     });
 }
-
-
-
-
-

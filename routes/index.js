@@ -371,7 +371,7 @@ router.get('/donut-chart2-data', function ( req, res) {
         "concat (round (sum (value_amount)/(select sum(value_amount) from contract) * 100 , 1),'%') as percentage," +
         "count(*) as conteo " +
         "from contract, contractingprocess " +
-        "where  contract.contractingprocess_id= contractingprocess.id group by destino;").then(function (data) {
+        "where contract.contractingprocess_id= contractingprocess.id group by destino ORDER BY destino ASC;").then(function (data) {
         res.json(data);
     }).catch(function (error) {
         console.log(error);

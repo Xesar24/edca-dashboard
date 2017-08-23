@@ -6,7 +6,7 @@ var pgp = require('pg-promise')();
 var edca_db;
 
 /* URL para del cdn de datos.gob.mx usado para cargar navbar y footer */
-process.env.CDN_URL = 'https://cdn.datos.gob.mx/qa';
+process.env.CDN_URL = 'https://cdn.datos.gob.mx';
 
 if ( typeof process.env.EDCA_DB != "undefined" ){
     console.log("EDCA_DB: ", process.env.EDCA_DB);

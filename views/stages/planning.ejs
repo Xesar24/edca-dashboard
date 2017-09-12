@@ -20,7 +20,7 @@
     <div class="col-md-3">
         <p class="small">Monto</p>
         <p><strong>
-                <%  if (!isNaN( budget.value_amount ) && budget.value_amount > 0 ){%>
+                <%  if (!isNaN( budget.budget_amount ) && budget.budget_amount > 0 ){%>
                 $ <%= (budget.budget_amount).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") %>
                 <%} else {%>
                 En proceso

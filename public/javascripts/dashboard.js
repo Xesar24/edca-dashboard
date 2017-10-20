@@ -104,7 +104,7 @@ $(document).ready(function () {
                     seriesColors: [
                         '#00cc99', // Adquisición de bienes y servicios
                         '#ff6600', // Obra pública
-                        '#663399' // Servicios relacionados con la obra                        
+                        '#663399' // Servicios relacionados con la obra
                     ]
                 },
                 grid: {

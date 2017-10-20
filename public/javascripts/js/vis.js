@@ -67,16 +67,16 @@ BubbleChart = (function() {
         filterText = filterText.toLowerCase();
         if (filterText !== "") {
             var filtrados = this.data.filter(function(d) {
-                return d['Razón social'].toLowerCase().indexOf(filterText) != -1
-                //return d.identifier_legalname.toLowerCase().indexOf(filterText) != -1
-            }); //=== 0 });  //!!!
+              if(d["Razón social"] !== null){
+                return d["Razón social"].toLowerCase().indexOf(filterText) != -1;
+              }
+            });
             if (Object.keys(filtrados).length !== 0) {
                 var names = {};
                 filtrados.forEach(function(x) {
                     names[x["Razón social"]] = "#00cc99";
                     //names[x.identifier_legalname] = "#00cc99";
                 }); //!!!
-                //console.log(names);
                 this.circles.transition().duration(600).style("fill", function(d) {
                     return names[d.original['Razón social']]; //!!!
                     //return names[d.original.idenfier_legalname];
@@ -420,9 +420,23 @@ $(function() {
         chart.display_labels();
     };
 
-    // Funcion que carga el CSV
-    d3.csv("/contratacionesabiertas/static/supplier_data.csv", render_vis);
-    //d3.json("/contratacionesabiertas/static/supplier_data.csv", render_vis);
+    //d3.csv("/contratacionesabiertas/static/supplier_data.csv", render_vis);
+    d3.json("/contratacionesabiertas/d3-bubble-chart-data", function(error, result) {
+      var data2 = [];
+      for (i = 0; i < result.length; i += 1) {
+        data2.push({
+          "Proveedor": result[i].identifier_id,
+          "Razón social": result[i].identifier_legalname,
+          "ID de contrato": result[i].contractid,
+          "Producto o servicio": result[i].title,
+          "Procedimiento de contratación": result[i].procurementmethod,
+          "Vigencia del contrato": result[i].vigencia,
+          "Monto": result[i].value_amount,
+          "cpid": result[i].cpid
+        });
+      }
+      render_vis(data2);
+    });
     // Evento KEYUP para buscar, ACTIVA LA FUNCIÓN BUSCAR AL ESCRIBIR ALGO EN EL INPUT DE BUSCAR
     $("#buscar_bubble").keyup(function() {
         var searchTerm;

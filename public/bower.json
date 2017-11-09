@@ -21,6 +21,7 @@
     "font-awesome": "fontawesome#^4.6.3",
     "jqplot": "*",
     "tooltipster": "^4.1.6",
-    "tooltipster-follower": "^0.1.5"
+    "tooltipster-follower": "^0.1.5",
+    "mustache.js": "mustache#^2.3.0"
   }
 }

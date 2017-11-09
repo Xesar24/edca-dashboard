@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-
 var pgp = require('pg-promise')();
 
 var edca_db;
@@ -28,7 +27,9 @@ router.get('/', function(req, res, next) {
         this.one('select sum(value_amount) as total from contract')
         ]);
     }).then(function (data) {
-        res.render('index',{ title: 'Contrataciones Abiertas',
+
+        res.render('index',{
+            title: 'Contrataciones Abiertas',
             metadata : {
                 supplier_count: data[0].total,
                 cp_count: data[1].total,
@@ -56,7 +57,8 @@ router.get('/contratos/',function (req, res) {
                 "where contract.contractingprocess_id= contractingprocess.id group by destino order by total_amount desc;")
         ]);
     }).then(function (data) {
-        res.render('dashboard',{ title: 'Contrataciones Abiertas',
+        res.render('dashboard',{
+            title: 'Contrataciones Abiertas',
             metadata : {
                 supplier_count: +data[0].total,
                 cp_count: +data[1].total,
@@ -66,7 +68,6 @@ router.get('/contratos/',function (req, res) {
                 destinos : data[5]
             }
         });
-
     }).catch(function (error) {
         console.log("ERROR: ", error);
     });

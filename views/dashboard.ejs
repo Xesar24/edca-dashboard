@@ -544,8 +544,7 @@ $('.progress-bar').tooltipster({
     $.getJSON("https://raw.githubusercontent.com/mxabierto/edca-dashboard/master/data/aff.json",function(aff){
         var template = document.getElementById('template').innerHTML;
         Mustache.parse(template);
-        var rendered = Mustache.render(template, {aff: aff });
-        document.getElementById('table_target').innerHTML = rendered;
+        document.getElementById('table_target').innerHTML = Mustache.render(template, {aff: aff });
     });
 </script>
 

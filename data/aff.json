@@ -9,8 +9,8 @@
     "Avance físico",
     "Avance financiero"
   ],
-  "t_data": {
-    "section_1": {
+  "t_data": [
+    {
       "title": "Obras Preliminares y Estudios",
       "rows": [
         [
@@ -95,7 +95,7 @@
         ]
       ]
     },
-    "section_2": {
+    {
       "title": "Obras Lado Tierra",
       "rows": [
         [
@@ -150,7 +150,7 @@
         ]
       ]
     },
-    "section_3": {
+    {
       "title": "Obras Lado Aire",
       "rows": [
         [
@@ -175,5 +175,5 @@
         ]
       ]
     }
-  }
+    }
 }

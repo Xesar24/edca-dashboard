@@ -1,17 +1,17 @@
 {
   "t_head": [
     "No.",
-    "Contrato",
+    "Contrato (modQA)",
     "Objeto del Contrato (modif QA)",
-    "Contratista",
+    "Contratista (modificación de QA)",
     "Importe comprometido",
-    "Importe pagado al 31-07-17",
-    "Avance físico",
-    "Avance financiero"
+    "Importe pagado al 31-10-17",
+    "Avance físico (modQA)",
+    "Avance financiero (modQA)"
   ],
   "t_data": [
     {
-      "title": "Obras Preliminares y Estudios",
+      "title": "Obras Preliminares y Estudios (modificación de QA)",
       "rows": [
         [
           1,
@@ -20,8 +20,8 @@
           "COCONAL S.A. P. I. DE CV",
           "$1,902,808,440.74",
           "$1,820,226,554.41",
-          "97.98%",
-          "95.66%"
+          "997.98%",
+          "995.66%"
         ],
         [
           2,

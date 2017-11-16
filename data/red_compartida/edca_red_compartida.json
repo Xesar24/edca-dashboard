@@ -1,0 +1,199 @@
+{
+  "uri": "https://datos.gob.mx/busca/organization/promtel",
+  "publishedDate": "2017-08-18T19:44:10.694Z",
+  "releases": [
+    {
+      "ocid": "ocds-07smqs-APP-009000896-E1-2016",
+      "id": "RELEASE_ocds-07smqs-APP-009000896-E1-2016_2017-08-18T19:44:10.692Z",
+      "date": "2017-08-17T05:00:00.000Z",
+      "tag": [
+        "contract"
+      ],
+      "initiationType": "tender",
+      "planning": {
+        "budget": {
+          "id": "15094000001",
+          "amount": {
+            "currency": "MXN"
+          },
+          "uri": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/30274541?verify=15&oid=25211381&fileId=13721837"
+        },
+        "rationale": "El desarrollo, despliegue y operación de la Red Compartida se lleva a cabo considerando que:   • El 11 de junio de 2013 se publicó en el Diario Oficial de la Federación el Decreto por el que se reforman y adicionan diversas disposiciones de los artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución Política de los Estados Unidos Mexicanos, en materia de telecomunicaciones, en cuyo artículo décimo sexto transitorio se establece que el Estado, a través del Ejecutivo Federal, en coordinación con el Instituto Federal de Telecomunicaciones, garantizará la instalación de una red pública compartida de telecomunicaciones que impulse el acceso efectivo de la población a la comunicación de banda ancha y a los servicios de telecomunicaciones.  • Que conforme a lo establecido en la misma disposición transitoria, la referida red compartida de telecomunicaciones contemplará, entre otros, el aprovechamiento de al menos 90 MHz del espectro liberado por la transición a la Televisión Digital Terrestre (banda 700 MHz) y de los recursos de la red troncal de fibra óptica de la Comisión Federal de Electricidad.  • Que el artículo décimo quinto transitorio del decreto referido en los párrafos anteriores, instruyó a la Comisión Federal de Electricidad a ceder totalmente al organismo descentralizado Telecomunicaciones de México su concesión para instalar, operar y explotar una red pública de telecomunicaciones, así como a transferirle todos los recursos y equipos necesarios para la operación y explotación de dicha concesión.  • Que con fecha 14 de julio de 2014 se publicó en el Diario Oficial de la Federación el decreto por el que se expiden la Ley Federal de Telecomunicaciones y Radiodifusión, y la Ley del Sistema Público de Radiodifusión del Estado Mexicano; y se reforman, adicionan y derogan diversas disposiciones en materia de telecomunicaciones y radiodifusión, en cuyo artículo décimo tercero transitorio se establece que el Ejecutivo Federal, a través de la Secretaría de Comunicaciones y Transportes, realizará las acciones tendientes a instalar la red pública compartida de telecomunicaciones a que se refiere el artículo Décimo Sexto transitorio del Decreto por el que se reforman y adicionan diversas disposiciones de los artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución Política de los Estados Unidos Mexicanos, en materia de telecomunicaciones, publicado en el Diario Oficial de la Federación el 11 de junio de 2013, y que en caso de que el Ejecutivo requiera de bandas de frecuencias del espectro liberado por la transición a la televisión digital terrestre (banda de 700 MHz) para crecer y fortalecer la red compartida, el Instituto Federal de Telecomunicaciones las otorgará directamente, siempre y cuando dicha red se mantenga bajo el control de una entidad o dependencia pública o bajo un esquema de asociación público-privada.  • Que el artículo 142 de la Ley Federal de Telecomunicaciones y Radiodifusión, establece que el Instituto Federal de Telecomunicaciones asignará directamente 90 MHz de la banda de 700 MHz para la operación y explotación de una red compartida mayorista, mediante concesión de uso comercial, en los términos establecidos en dicha ley.  • Que el Plan Nacional de Desarrollo 2013-2018 plantea como uno de sus objetivos la democratización del acceso a los servicios de telecomunicaciones, fijando para tales efectos, como líneas de acción entre otras, la promoción de mayor oferta de los servicios de telecomunicaciones, la inversión privada en el sector; fomentar el uso óptimo, entre otras, de la banda de 700 MHz bajo principios de acceso universal, no discriminatorio, compartido y continuo; y la promoción de participaciones público-privadas en el despliegue, desarrollo y uso eficiente de la infraestructura de conectividad en el país.  • Que el Programa Sectorial de Comunicaciones y Transportes 2013-2018 establece, como uno de sus objetivos, ampliar la cobertura y el acceso a mejores servicios de comunicaciones, en condiciones de competencia, y para ello estableció como estrategia promover el desarrollo de nueva infraestructura en comunicaciones, así como su uso óptimo, para mejorar su cobertura, conectividad y accesibilidad, fijando como líneas de acción, entre otras, promover la creación de una red compartida de acceso inalámbrico al mayoreo que aproveche la banda de 700 MHz, así como promover asociaciones público-privadas en el despliegue, desarrollo y uso eficiente de la infraestructura de conectividad, expandir y operar la red troncal prevista en la reforma constitucional en materia de telecomunicaciones para ofrecer mayor cobertura, entre otras.",
+        "documents": [
+          {
+            "id": "doc-8d60ce9a-bf01-4f2c-9dea-1b276675f992",
+            "documentType": "contractAnnexe",
+            "title": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/30274541?verify=15&oid=25211381&fileId=13721837",
+            "description": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/30274541?verify=15&oid=25211381&fileId=13721837",
+            "url": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/30274541?verify=15&oid=25211381&fileId=13721837"
+          }
+        ]
+      },
+      "tender": {
+        "id": "APP-009000896-E1-2016",
+        "title": "BASES DEL CONCURSO INTERNACIONAL NÚMERO 01/2016 PARA LA ADJUDICACIÓN DE UN PROYECTO DE ASOCIACIÓN PÚBLICO-PRIVADA CONFORME A LA LEY DE ASOCIACIONES PÚBLICO PRIVADAS, PARA LA INSTALACIÓN Y OPERACIÓN DE LA RED PÚBLICA COMPARTIDA DE TELECOMUNICACIONES (BASES DEL CONCURSO DE LA RED COMPARTIDA) Y CONTRATO DE ASOCIACIÓN PÚBLICO-PRIVADA QUE CELEBRAN EL ORGANISMO PROMOTOR DE INVERSIONES EN TELECOMUNICACIONES Y TELECOMUNICACIONES DE MÉXICO, CON LA SOCIEDAD CON PROPÓSITO ESPECÍFICO GANADORA DEL CONCURSO INTERNACIONAL (CONTRATO DE LA RED COMPARTIDA)",
+        "description": "Asociación público-privada (APP) para el diseño, instalación, despliegue, operación, mantenimiento y actualización de una red de servicios de telecomunicaciones móviles. La aportación pública serán los 90MHz en la banda de 700 MHz y un par de hilos de fibra óptica de la Red Troncal, mientras que el diseño, financiamiento, despliegue, operación, comercialización y mantenimiento de la red correrá a cargo del particular. La red será mayorista, es decir, comercializará todos sus servicios y capacidades a otros concesionarios y comercializadoras sin discriminación.",
+        "status": "complete",
+        "items": [
+          {
+            "id": "item-adcd0892-9a69-4ca8-98ab-ddf6af328c23",
+            "description": "Clave CUCOP del bien o servicio: 31600001",
+            "classification": {
+              "scheme": "Servicio de telecomunicaciones",
+              "id": "31602",
+              "description": "Clave CUCOP del bien o servicio: 31600001"
+            },
+            "quantity": 1,
+            "unit": {
+              "name": "Una red compartida mayorista",
+              "value": {
+                "currency": "MXN"
+              }
+            }
+          }
+        ],
+        "minValue": {
+          "currency": "MXN"
+        },
+        "value": {
+          "currency": "MXN"
+        },
+        "procurementMethod": "open",
+        "procurementMethodRationale": "Justificación del procedimiento de contratación. El proyecto se adjudicará a través de un concurso, tal como lo establece el artículo 38 de la Ley de Asociaciones Público Privadas, a saber::     “Artículo 38. Las dependencias y entidades que pretendan el desarrollo de un proyecto de asociación público-privada convocarán a concurso, que deberá llevarse a cabo conforme a los principios de legalidad, libre concurrencia y competencia, objetividad e imparcialidad, transparencia y publicidad y, con las particularidades del artículo 31 de esta Ley, en igualdad de condiciones para todos los participantes.  En tales concursos se buscará adjudicar los proyectos en las mejores condiciones disponibles en cuanto a precio, calidad, financiamiento, oportunidad y demás circunstancias pertinentes (…)”.",
+        "metodoDeAdquisicion": "Licitación pública",
+        "awardCriteria": "Cobertura poblacional ofertada.",
+        "awardCriteriaDetails": "La evaluación de las propuestas se llevará a cabo con base en lo establecido en el artículo 52 de la LAPP, y lo establecido en las BASES DEL CONCURSO DE LA RED COMPARTIDA, realizándose en una primera etapa una evaluación de las ofertas técnicas, para posteriormente llevar a cabo una evaluación de la oferta económica de los participantes. Las ofertas técnicas se determinarán solventes cuando el concursante:   a) Acredite capacidad legal, de gestión, administrativa y técnica en los términos de las BASES DEL CONCURSO DE LA RED COMPARTIDA.  b) Haya obtenido opinión en materia de competencia rconómica por parte del Instituto Federal de Telecomunicaciones en sentido favorable o favorable sujeta a condiciones, y siempre y cuando se encuentre en cumplimiento de tales condiciones.  c) Haya presentado una oferta técnica completa y que cumpla con todos los requisitos establecidos en las BASES DEL CONCURSO DE LA RED COMPARTIDA y,   d) No se ubique en ninguna de las causas de descalificación establecidas en la Ley de APP, el Reglamento de la Ley de APP y en las BASES DEL CONCURSO DE LA RED COMPARTIDA. Por su parte, las ofertas económicas se considerarán solventes cuando el concursante:   a) La presente utilizando el formato y de conformidad con los requisitos que se establecen en los anexos 11 y 12 de las BASES DEL CONCURSO DE LA RED COMPARTIDA,  b) Que cumpla con la documentación y acredite los requisitos establecidos para capacidad económica y financiera,  c) No incluya documentos distintos o adicionales a los que debe contener la oferta económica,  d) Contenga la Cobertura Poblacional Ofertada y ésta sea igual o mayor a la Cobertura Mínima Requerida,  e) Contenga el Calendario de Despliegue al que se compromete el Concursante cumplir, con la Cobertura Mínima Requerida y la Cobertura Poblacional Ofertada en términos de las BASES DEL CONCURSO DE LA RED COMPARTIDA y  f) Contenga el Guante, que se utilizará como criterio de asignación únicamente cuando se presente un empate de Cobertura Poblacional Ofertada entre dos o más Concursantes, cuyo formato de presentación se encuentra en el anexo 12 de las BASES DEL CONCURSO DE LA RED COMPARTIDA.",
+        "submissionMethod": [
+          "Cada Concursante únicamente podrá presentar una Propuesta. La Propuesta de cada Concursante se integrará con una Oferta Técnica y una Oferta Económica. Las Ofertas Técnica y Económica deberán cumplir con los requisitos establecidos en las BASES DEL CONCURSO DE LA RED COMPARTIDA y deberán ser presentadas por separado en sobres cerrados en el acto de presentación y apertura de las Propuestas. En el caso de la Propuesta Técnica, la documentación que la soporte deberá contenerse en envoltura o embalaje debidamente sellado. Cualquier documento adicional que se entregue fuera de los sobres o de la envoltura o embalaje en la que se encuentre la información de soporte, será desechado."
+        ],
+        "submissionMethodDetails": "La Oferta Técnica de los Concursantes deberá contenerse en sobre cerrado, el cual deberá estar claramente rotulado en su exterior con la leyenda “Oferta Técnica de [nombre del Concursante]”, además de lo previsto en el artículo 73 del Reglamento de la Ley de APP. En caso de que la Propuesta se presente en Consorcio, se deberá nombrar a un representante común del mismo y otorgarle poder amplio y suficiente para atender todo lo relacionado con la Propuesta y con el Concurso. El representante común deberá firmar y presentar la Propuesta. En el caso de presentación de documentos legales otorgados conforme a leyes extranjeras, deberán de apostillarse o legalizarse y, cuando se encuentren redactados en un idioma diferente al español, se deberá acompañar la traducción correspondiente realizada por perito traductor autorizado por las autoridades competentes en México.     Una vez presentadas las Propuestas no podrán ser retiradas o dejarse sin efecto por los Concursantes y se considerarán vigentes dentro del procedimiento de Concurso hasta su conclusión. Los sobres que contengan las Ofertas Técnicas serán abiertos en sesión pública y se relacionará su contenido sin mayor valoración ante la presencia del Testigo Social y del fedatario público. Se levantará un acta del acto de presentación de las Propuestas y apertura de las Ofertas Técnicas en la que se asentarán los hechos relevantes acontecidos, así como la fecha, hora y lugar en que se dará a conocer el resultado de la evaluación de las Ofertas Técnicas. El acta será firmada por los Concursantes y por el funcionario que represente a la Entidad Convocante, entregándole a cada uno copia de la misma. La falta de firma de algún Concursante no invalidará su contenido y efectos. El acta servirá de constancia de la celebración del acto correspondiente y se publicará a más tardar al día hábil siguiente del evento que documenta en las páginas web de la Entidad Convocante y en CompraNet.",
+        "hasEnquiries": true,
+        "eligibilityCriteria": "Los Concursantes deberán acreditar su capacidad administrativa, económica, técnica y fiinanciera con diversos documentos establecidos en las BASES DEL CONCURSO DE LA RED COMPARTIDA, entre los cuales se listan algunos de los más imporantes:  • Documento conteniendo la descripción de los procedimientos administrativos del Concursante, relativos a la atención a usuarios, facturación, recepción, tramitación y atención de quejas, firmado por el Concursante o su representante común, en caso de Consorcio.  • Organigrama de los principales puestos directivos hasta el segundo nivel jerárquico, en caso de resultar adjudicados con el Proyecto.   • Escrito bajo protesta de decir verdad que contenga la información y documentación que acredite que el Concursante, el Consorcio y/o alguno de sus socios y/o las personas que conformarán el equipo de administración, cuentan con la experiencia y conocimientos necesarios, de al menos diez (10) años en la administración, dirección y operación de empresas, públicas o privadas, en cualquier parte del mundo, de complejidad comparable con la Red Compartida.   • Para Concursantes que no sean y/o que no cuenten con participación de administradores de activos, deberán presentar estados financieros dictaminados por firma independiente de reconocido prestigio internacional, por los últimos dos ejercicios fiscales concluidos, en los que se muestre un capital contable de cuando menos $15,000,000,000.00 M.N. (Quince mil millones de pesos 00/100 Moneda Nacional). Tratándose de empresas que coticen sus acciones en bolsa de valores, podrán presentar su reporte anual que se presente ante la bolsa correspondiente, a efecto de acreditar este requisito.   • En caso de un Concursante administrador de activos que participe por su cuenta o en un Consorcio integrado solo por administradores de activos, deberán presentar carta de aprobación de inversión de su comité de inversión, o su órgano de gobierno, por recursos equivalentes a un capital requerido no menor a $7,500,000,000.00 M.N. (Siete mil quinientos millones de pesos 00/100 Moneda Nacional).  • Documento emitido por el Concursante en el que se describan las fuentes de financiamiento para la Red Compartida. En caso de Consorcio, se entenderá y tendrá como acreditado el requisito con la presentación y firma de este documento por el representante común. Dicho documento deberá ser acompañado de cartas de términos y condiciones de financiamiento emitidas y firmadas por instituciones financieras de prestigio internacional.   • Registro Federal de Contribuyentes del Concursante, su última declaración anual de impuestos ante el Servicio de Administración Tributaria y comprobante de la presentación de dicha declaración. En caso de Consorcio dicha información deberá presentarse respecto de cada uno de los miembros del mismo. Los Concursantes extranjeros deberán presentar los documentos equivalentes emitidos por su país de origen, debidamente apostillados y traducidos al idioma español por perito oficial autorizado para actuar como tal.  • Escrito que contenga la declaración bajo protesta de decir verdad de que todos los recursos destinados al proyecto provendrán de fuentes lícitas.  • Documento mediante el cual el Concursante se comprometa, en caso de resultar adjudicado con el Proyecto, a constituir un Fideicomiso con un capital suscrito y pagado de cuando menos $1,000,000,000.00 M.N. (Un mil millones de pesos 00/100 Moneda Nacional) de los cuales al menos $10,000,000.00, (Diez millones de pesos 00/100 Moneda Nacional) deberán corresponder al capital fijo sin derecho a retiro de la sociedad.  • Los Concursantes deberán acreditar su capacidad financiera para el diseño, instalación, despliegue, operación, mantenimiento y actualización de la Red Compartida, así como la comercialización del Servicio Mayorista de Telecomunicaciones a través de la misma, con modelo financiero del Proyecto, proyectado a veinte (20) años. El modelo financiero del Proyecto deberá presentarse en formato impreso y electrónico (archivo de hoja de cálculo, en memoria USB), y contener y cumplir con los requisitos y lineamientos establecidos en el anexo 8 de las presentes Bases.   • Escrito bajo protesta de decir verdad que contenga la información y documentación que acredite que el Concursante, el Consorcio y/o alguno de sus socios y/o las personas que conformarán el equipo de administración cuentan con la experiencia y conocimientos necesarios, de al menos diez (10) años en el diseño, instalación, despliegue, operación, mantenimiento y actualización de redes de telecomunicaciones de servicios fijos o móviles, públicas o privadas, en cualquier parte del mundo, de tamaño, alcance y complejidad comparables con la Red Compartida.   • Conforme a lo establecido por los artículos 45, fracción IX, y 47, párrafo segundo, de la Ley de APP, los Concursantes deberán entregar como parte de su Propuesta (dentro de su Oferta Técnica) una Garantía de Seriedad por un monto equivalente a $1,000,000,000.00 (Un mil millones de pesos 00/100 Moneda Nacional), misma que deberá permanecer vigente hasta el momento en que, de ser el caso, se firme el Contrato de APP, el Concursante que resulte ganador entregue al Organismo Convocante la Garantía de Cumplimiento y se cumplan las condiciones a las que se encuentra sujeto el Contrato de APP y éste surta sus efectos, o bien hasta el momento en que se declare desierto el Concurso, en su caso.",
+        "numberOfTenderers": 2,
+        "tenderers": [
+          {
+            "identifier": {
+              "id": "ARE161205BX8",
+              "uri": "http://www.altanredes.com"
+            },
+            "name": "ARE161205BX8"
+          }
+        ],
+        "procuringEntity": {
+          "identifier": {
+            "id": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+          },
+          "name": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+        },
+        "documents": [
+          {
+            "id": "doc-d337a65c-4fc7-4154-bbdf-eb7e9846f6d7",
+            "documentType": "contractAnnexe",
+            "title": "La convocatoria se publicará en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periodicos de circulacion nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP.",
+            "description": "http://promtel.gob.mx/bases-int-es.zip",
+            "url": "http://promtel.gob.mx/bases-int-es.zip"
+          }
+        ]
+      },
+      "buyer": {},
+      "awards": [
+        {
+          "id": "APP-009000896-E1-2016",
+          "title": "ADJUDICACION DE UN PROYECTO DE ASOCIACION PUBLICO-PRIVADA CONFORME A LA LEY DE ASOCIACIONES PÚBLICO PRIVADAS, PARA LA INSTALACIÓN Y OPERACIÓN DE LA RED PÚBLICA COMPARTIDA DE TELECOMUNICACIONES A QUE SE REFIERE EL ARTICULO DÉCIMO SEXTO TRANSITORIO DEL DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LOS ARTÍCULOS 6°., 7°., 27, 28, 73, 78, 94 Y 105 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, EN MATERIA DE TELECOMUNICACIONES, PUBLICADO EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 11 DE JUNIO DE 2013, CONTEMPLANDO EL APROVECHAMIENTO DE LA BANDA DE FRECUENCIAS DEL ESPECTRO QUE INCLUYE LOS SEGMENTOS DE 703 A 748 MHZ Y DE 758 A 803 MHZ, CON UN TOTAL DE 90 MHZ BAJO LA FIGURA DE ARRENDAMIENTO Y DE UN PAR DE HILOS DE FIBRA ÓPTICA DE LA RED TRONCAL REFERIDA EN EL ARTÍCULO DÉCIMO QUINTO TRANSITORIO DEL MISMO DECRETO.",
+          "description": "En la Ciudad de México, siendo las 10:00 horas del 17 de noviembre de 2016, se reunieron en el auditorio de la Secretaría de Comunicaciones y Transportes, ubicado en el Centro Nacional SCT, Cuerpo C, Avenida Universidad y Xola S/N, Colonia Narvarte, Delegación Benito Juárez, Ciudad de México, C.P. 03020, los servidores públicos y demás personas cuyos nombres y firmas aparecen al final de la presente Acta, así como los representantes de los Concursantes enlistados en la relación que se agrega como Anexo \"A\" de la presente Acta, y los observadores cuyos nombres se detalla en la relación que se agrega como Anexo \"B\" de la presente Acta, con objeto de llevar a cabo la JUNTA PÚBLICA EN LA QUE SE DIO A CONOCER Y SE NOTIFICÓ EL RESULTADO DE LA EVALUACIÓN DE LA OFERTA ECONÓMICA DEL CONCURSANTE CONSORCIO ALTAN Y SE NOTIFICÓ EL FALLO del Concurso Internacional No. APP-009000896-E1-2016 (el Concurso).",
+          "date": "2016-11-17T06:00:00.000Z",
+          "value": {
+            "currency": "MXN"
+          },
+          "suppliers": [
+            {
+              "identifier": {
+                "id": "ARE161205BX8",
+                "uri": "http://www.altanredes.com"
+              },
+              "name": "ARE161205BX8"
+            }
+          ],
+          "items": [
+            {
+              "id": "item-36d53fa5-bb41-4209-b141-c47f078e5adb",
+              "description": "Clave CUCOP del bien o servicio adjudicado: 31600001",
+              "classification": {
+                "scheme": "Servicio de telecomunicaciones",
+                "id": "31602",
+                "description": "Clave CUCOP del bien o servicio adjudicado: 31600001"
+              },
+              "quantity": 1,
+              "unit": {
+                "name": "Una red compartida mayorista",
+                "value": {
+                  "currency": "MXN"
+                }
+              }
+            }
+          ],
+          "documents": [
+            {
+              "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b55",
+              "documentType": "contractAnnexe",
+              "title": "SCT",
+              "description": "SCT",
+              "url": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/33544400?verify=15&oid=29349898&fileId=15843363"
+            }
+          ]
+        }
+      ],
+      "contracts": [
+        {
+          "id": "APP-009000896-E1-2016",
+          "awardID": "APP-009000896-E1-2016",
+          "title": "CONTRATO DE ASOCIACIÓN PÚBLICO-PRIVADA QUE CELEBRAN EL ORGANISMO PROMOTOR DE INVERSIONES EN TELECOMUNICACIONES, REPRESENTADO POR SU DIRECTOR GENERAL, LUIS FERNANDO BORJÓN FIGUEROA (EN LO SUCESIVO EL \"ORGANISMO\") Y TELECOMUNICACIONES DE MÉXICO, REPRESENTADO POR SU DIRECTOR GENERAL, JORGE ALBERTO JURAIDINI RUMILLA (EN LO SUCESIVO \"TELECOMM\") CON LA SOCIEDAD CON PROPÓSITO ESPECÍFICO DENOMINADA \"AL TÁN REDES\", S.A.P.I. DE C.V., REPRESENTADA POR EUGENIO GALDÓN BRUGAROLAS (EN LO SUCESIVO EL \"DESARROLLADOR\" Y, CONJUNTAMENTE CON EL ORGANISMO Y CON TELECOMM, LAS \"PARTES\")",
+          "description": "El objeto de este Contrato es establecer el esquema, los términos y las condiCiones de la asociación público privada bajo las cuales el Desarrollador deberá diseñar, instalar, desplegar, operar, mantener y actualizar la Red Compartida, contemplando el aprovechamiento de la banda de frecuencias qel espectro que incluye los segmentos de 703 a 748 MHz y de 758 a 803 MHz, con un total de 90 MHz bajo la figura de arrendamiento y, en su caso, aprovechar un par de hilos de fibra óptica de la Red Troncal y comercializar el Servicio Mayorista de Telecomunicaciones a través de la misma, a fin de que el Estado mediante la asociación público privada formada en el presente Contrato dé cumplimiento a lo establecido en el artículo transitorio décimo sexto del Decreto de Reforma Constitucional.",
+          "status": "active",
+          "period": {
+            "startDate": "2017-01-24T06:00:00.000Z",
+            "endDate": "2017-01-24T06:00:00.000Z"
+          },
+          "value": {
+            "currency": "MXN"
+          },
+          "items": [
+            {
+              "id": "item-c841a5b0-6c4b-414f-b99a-d6014d313e8f",
+              "description": "Clave CUCOP del bien o servicio contratado: 31600001",
+              "classification": {
+                "scheme": "Servicio de telecomunicaciones",
+                "id": "31602",
+                "description": "Clave CUCOP del bien o servicio contratado: 31600001"
+              },
+              "quantity": 1,
+              "unit": {
+                "name": "Una red compartida mayorista",
+                "value": {
+                  "currency": "MXN"
+                }
+              }
+            }
+          ],
+          "dateSigned": "2017-01-24T06:00:00.000Z",
+          "documents": [
+            {
+              "id": "doc-667c9a11-0e41-4b3a-84f0-e5e8dc39329d",
+              "documentType": "contractAnnexe",
+              "title": "http://promtel.gob.mx/Contrato-Version-Publica.PDF",
+              "description": "http://promtel.gob.mx/Contrato-Version-Publica.PDF",
+              "url": "http://www.sct.gob.mx/red-compartida/Bases-int/Anexos-contrato.zip"
+            }
+          ]
+        }
+      ],
+      "language": "es"
+    }
+  ],
+  "publisher": {
+    "name": "PROMTEL",
+    "uri": "http://promtel.gob.mx/"
+  },
+  "license": "https://datos.gob.mx/libreusomx",
+  "publicationPolicy": "https://datos.gob.mx/libreusomx"
+}

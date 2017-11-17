@@ -9,8 +9,7 @@
     "Avance físico",
     "Avance financiero"
   ],
-  "t_data": [
-    {
+  "t_data": [{
       "title": "Obras Preliminares y Estudios",
       "rows": [
         [
@@ -175,5 +174,5 @@
         ]
       ]
     }
-    ]
+  ]
 }

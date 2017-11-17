@@ -1,0 +1,102 @@
+<div class="row contract-stats">
+    <div class="col-md-12">
+        <p class="small">Etapa</p>
+        <p><strong>Implementación</strong></p>
+    </div>
+</div>
+<div class="row contract-stats">
+    <div class="col-md-12">
+        <p class="small">Comprador</p>
+        <p class="semi-bold">{{ ocds.buyer.name }}</p>
+    </div>
+</div>
+<div class="row contract-stats no-border">
+    <div class="col-md-3 col-md-offset-6">
+
+        <p class="small">Descargar datos abiertos</p>
+        <a href="{{links.json.url}}" download="json"><span class="label" data-format="json">JSON</span></a>
+        <a href="{{links.xlsx.url}}" download="xlsx">  <span class="label" data-format="xlsx">XLSX</span></a>
+
+    </div>
+    <div class="col-md-3">
+        <a href="{{ links.url.pdf}}" download="pdf">
+            <p class="small">Descargar contrato</p>
+            <span class="label" data-format="pdf">PDF</span>
+        </a>
+
+    </div>
+</div>
+<p class="small">Procesos</p>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="padding-bottom: 60px">
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <i class="more-less glyphicon glyphicon-chevron-right"></i>
+                    Hitos
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                {{#implementation.milestones }}
+                    <strong> {{title}} </strong>
+                    <ul>
+                        <li>{{id}}</li>
+                        <li>{{description}} </li>
+                        <li>{{dueDate}} </li>
+                        <li>{{dateModified}} </li>
+                        <li>{{status}} </li>
+                    </ul>
+                {{/implementation.milestones }}
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <i class="more-less glyphicon glyphicon-chevron-right"></i>
+                    Transacciones
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+
+                {{#implementation.transactions}}
+                    <strong> Transacción <%= i %> </strong>
+                    <ul>
+                        <li>ID: {{id}}></li>
+                        <li>Origen: {{source}}</li>
+                        <li>Fecha de implementación: {{ date }}</li>
+                        <li>Monto: {{value.amount }}</li>
+                        <li>Moneda: {{ value.currency }}</li>
+                    </ul>
+
+               {{/implementation.transactions}}
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <i class="more-less glyphicon glyphicon-chevron-right"></i>
+                    Documentos
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+                {{#implementation.documents}}
+                    <strong>{{ title }}</strong>
+                    <ul>
+                        <li> Descripción: {{ description }}</li>
+                        <li> URL: {{ url }}</li>
+                    </ul>
+                {{/implementation.documents}}
+            </div>
+        </div>
+    </div>
+</div>

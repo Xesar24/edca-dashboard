@@ -19,6 +19,7 @@
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/polymer/polymer.html">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-navbar/dgm-navbar.html">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-footer/dgm-footer.html">
+    <link rel='stylesheet' href='/contratacionesabiertas/static/stylesheets/contrato.css'/>
 
     <!-- Google Analytics -->
     <script type="text/javascript">
@@ -256,7 +257,6 @@
                 <p class="stat"> 100% </p>
             </div>
 
-
             <div class="col-sm-4 widget">
                 <h5>COBERTURA MÍNIMA POBLACIONAL</h5>
                 <p class="stat"> 92.2%</p>
@@ -288,7 +288,58 @@
 
 <!-- Detalle del contrato-->
 
+<div class="container">
+    <div class="row">
+        <div id="contract-sidebar" class="col-md-4 col-sm-4 col-xs-12 sidebar">
+            <div class="info">
+                <h3>Proceso de contratación</h3>
 
+                <p class="title"> Título ... </p>
+
+            </div>
+            <div class="stages">
+                <p><small>ETAPAS</small></p>
+                <ul>
+                    <!-- Planeación -->
+                    <li class='active etapa' data-stage="planning">
+                        <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-planeacion.png">
+                        <img class="hover-image" src="/contratacionesabiertas/static/images/ic-planeacion.png">
+                        <a href="#">Planeación </a>
+                    </li>
+                    <!-- Licitación -->
+                    <li class="etapa" data-stage="tender">
+                        <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-licitacion.png">
+                        <img class="hover-image" src="/contratacionesabiertas/static/images/ic-licitacion.png">
+                        <a href="#">Concurso</a>
+                    </li>
+                    <!-- Adjudicación -->
+                    <li class="etapa" data-stage="awards">
+                        <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-adjudicacion.png">
+                        <img class="hover-image" src="/contratacionesabiertas/static/images/ic-adjudicacion.png">
+                        <a href="#">Adjudicación</a>
+                    </li>
+                    <!-- Contrato -->
+                    <li class="etapa" data-stage="contracts">
+                        <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-contratacion.png">
+                        <img class="hover-image" src="/contratacionesabiertas/static/images/ic-contratacion.png">
+                        <a href="#">Contratación</a>
+                    </li>
+                    <!-- Implementación -->
+                    <li class="etapa" data-stage="implementation">
+                        <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-implementacion.png">
+                        <img class="hover-image" src="/contratacionesabiertas/static/images/ic-implementacion.png">
+                        <a href="#">Implementación</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="contract-content" class="col-md-8 col-sm-8 col-xs-12">
+            <div id = "target"></div>
+           <% //include planning %>
+
+        </div>
+    </div>
+</div>
 
 <!-- Fin del detalle del contrato -->
 
@@ -353,70 +404,6 @@
 </div>
 <!--</section>-->
 
-
-<!--
-
-<div class="container stages">
-    <div class="row">
-        <div class="col-md-12">
-            <h1>Etapas del proceso de contrataciones abiertas</h1>
-
-            <div class="row">
-                <div class="col-sm-4 stages-widget">
-                    <img src="/redcompartida/static/images/ic-planeacion.png" alt="Planeaciñon">
-                    <div class="content">
-                        <p class="title">1. Planeación</p>
-                        <p>Encuentra datos sobre el presupuesto, fundamento y descripción general del proyecto; así como sus documentos, estudios y evaluaciones preparatorios relevantes.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 stages-widget">
-                    <img src="/redcompartida/static/images/ic-licitacion.png" alt="Planeaciñon">
-                    <div class="content">
-                        <p class="title">2. Licitación</p>
-                        <p>Encuentra datos sobre el proceso de adjudicación del proyecto, como tipo de procedimiento, valor, método y criterios de adjudicación y aclaraciones, fechas relevantes y datos del testigo social, participantes, hitos del procedimiento y modificaciones al mismo.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 stages-widget">
-                    <img src="/redcompartida/static/images/ic-adjudicacion.png" alt="Planeaciñon">
-                    <div class="content">
-                        <p class="title">3. Adjudicación</p>
-                        <p>Encuentra datos sobre el proveedor asignado para el proyecto, el proceso de adjudicación, sus documentos, inconformidades y modificaciones.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 stages-widget">
-                    <img src="/redcompartida/static/images/ic-contratacion.png" alt="Planeaciñon">
-                    <div class="content">
-                        <p class="title">4. Contratación</p>
-                        <p>Encuentra datos sobre la firma del contrato donde se establecen las particularidades del bien o servicio, periodos de pago, entrega y sus documentos principales.</p>
-                    </div>
-                </div>
-                <div class="col-sm-4 stages-widget">
-                    <img src="/redcompartida/static/images/ic-implementacion.png" alt="Planeaciñon">
-                    <div class="content">
-                        <p class="title">5. Implementación</p>
-                        <p>Encuentra datos sobre la ejecución del proyecto, como las fechas y pagos correspondientes por el bien o servicio, hitos del proyecto y evidencia de la ejecución</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-</div>
-
-
-<div class="methodology">
-    <div class="container">
-        <div class="col-md-12" style="padding-top: 25px">
-            <button  id="ocds" class="btn btn-primary">Conoce la metodología</button>
-        </div>
-    </div>
-</div>
--->
-
-
 <div class="container statistics">
     <h1>Datos</h1>
 
@@ -458,10 +445,27 @@
 <script type="text/javascript" src="<%= process.env.CDN_URL %>/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 <script src="/redcompartida/static/bower_components/jquery/dist/jquery.min.js"></script>
 
+<script type="text/javascript">
+    function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
+</script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
 <!--<script src="/redcompartida/static/assets/js.js"></script>-->
 <script src="/redcompartida/static/assets/underscore-min.js" type="text/javascript"></script>
 <script src="/redcompartida/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/redcompartida/static/assets/moment.js"></script>
+<script src="/redcompartida/static/bower_components/mustache.js/mustache.min.js"></script>
 
 
 <script>
@@ -686,6 +690,77 @@
     }
 
     draw_chart("Planeación");
+
+</script>
+
+<script src="/redcompartida/static/bower_components/axios/dist/axios.min.js"></script>
+
+<script>
+
+
+    function getOCDS(){
+        return axios.get('https://raw.githubusercontent.com/mxabierto/edca-dashboard/master/data/red_compartida/edca_red_compartida.json')
+    }
+
+    function getLinks(){
+        return axios.get('https://raw.githubusercontent.com/mxabierto/edca-dashboard/master/data/red_compartida/links.json')
+    }
+
+    axios.all([ getOCDS(), getLinks()]).then(axios.spread(function( ocds, links ){
+
+    $.get('/redcompartida/static/mustache/planning.mustache', function(html) {
+        var template = html //document.getElementById('planning_template').innerHTML;
+        //console.log(ocds.data)
+        Mustache.parse(template);
+        document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], links: links.data });
+    });
+
+
+    //sidebar onclick events
+    $(".etapa").on('click', function (e) {
+        //var selected_li = $(e.target);
+        var stage =  $(this).attr("data-stage");
+        //alert("Cargando etapa: "+ stage );
+        switch (stage){
+            case "planning":
+                $.get('/redcompartida/static/mustache/planning.mustache', function(html) {
+                    var template = html //document.getElementById('planning_template').innerHTML;
+                    Mustache.parse(template);
+                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], links: links.data });
+                });
+                break;
+            case "tender":
+                $.get('/redcompartida/static/mustache/tender.mustache', function(html) {
+                    var template = html //document.getElementById('planning_template').innerHTML;
+                    Mustache.parse(template);
+                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], links: links.data });
+                });
+                break;
+            case "awards":
+                $.get('/redcompartida/static/mustache/awards.mustache', function(html) {
+                    var template = html //document.getElementById('planning_template').innerHTML;
+                    Mustache.parse(template);
+                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], award: ocds.data.releases[0].awards[0], links: links.data });
+                });
+                break;
+            case "contracts":
+                $.get('/redcompartida/static/mustache/contracts.mustache', function(html) {
+                    var template = html //document.getElementById('planning_template').innerHTML;
+                    Mustache.parse(template);
+                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], contract: ocds.data.releases[0].contracts[0], links: links.data });
+                });
+                break;
+            case "implementation":
+                $.get('/redcompartida/static/mustache/implementation.mustache', function(html) {
+                    var template = html //document.getElementById('planning_template').innerHTML;
+                    Mustache.parse(template);
+                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], implementation: ocds.data.releases[0].contracts[0].implementation, links: links.data });
+                });
+                break;
+        }
+    });
+
+    })).catch(function(error){ console.log(error);})
 
 </script>
 </body>

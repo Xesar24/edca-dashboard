@@ -7,8 +7,7 @@
     "Importe comprometido",
     "Importe pagado al 31-10-17",
     "Avance físico (modQA)",
-    "Avance financiero (modQA)",
-    "Nueva Columna (modQA)"
+    "Avance financiero (modQA)"   
   ],
   "t_data": [
     {
@@ -22,8 +21,7 @@
           "$1,902,808,440.74",
           "$1,820,226,554.41",
           "997.98%",
-          "995.66%",
-          "Dato nueva columna"
+          "995.66%"          
         ],
         [
           2,

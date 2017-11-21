@@ -465,7 +465,7 @@
 <script src="/redcompartida/static/assets/underscore-min.js" type="text/javascript"></script>
 <script src="/redcompartida/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/redcompartida/static/assets/moment.js"></script>
-<script src="/redcompartida/static/bower_components/mustache.js/mustache.min.js"></script>
+<script src="/redcompartida/static/bower_components/handlebars/handlebars.min.js"></script>
 
 
 <script>
@@ -709,10 +709,8 @@
     axios.all([ getOCDS(), getLinks()]).then(axios.spread(function( ocds, links ){
 
     $.get('/redcompartida/static/mustache/planning.mustache', function(html) {
-        var template = html //document.getElementById('planning_template').innerHTML;
-        //console.log(ocds.data)
-        Mustache.parse(template);
-        document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], links: links.data });
+        var template = Handlebars.compile(html);
+        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
     });
 
 
@@ -724,37 +722,32 @@
         switch (stage){
             case "planning":
                 $.get('/redcompartida/static/mustache/planning.mustache', function(html) {
-                    var template = html //document.getElementById('planning_template').innerHTML;
-                    Mustache.parse(template);
-                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], links: links.data });
+                    var template = Handlebars.compile(html);
+                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
                 });
                 break;
             case "tender":
                 $.get('/redcompartida/static/mustache/tender.mustache', function(html) {
-                    var template = html //document.getElementById('planning_template').innerHTML;
-                    Mustache.parse(template);
-                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], links: links.data });
+                    var template = Handlebars.compile(html);
+                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
                 });
                 break;
             case "awards":
                 $.get('/redcompartida/static/mustache/awards.mustache', function(html) {
-                    var template = html //document.getElementById('planning_template').innerHTML;
-                    Mustache.parse(template);
-                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], award: ocds.data.releases[0].awards[0], links: links.data });
+                    var template = Handlebars.compile(html);
+                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, award: ocds.data.releases[0].awards[0] });
                 });
                 break;
             case "contracts":
                 $.get('/redcompartida/static/mustache/contracts.mustache', function(html) {
-                    var template = html //document.getElementById('planning_template').innerHTML;
-                    Mustache.parse(template);
-                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], contract: ocds.data.releases[0].contracts[0], links: links.data });
+                    var template = Handlebars.compile(html);
+                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, contract: ocds.data.releases[0].contracts[0] });
                 });
                 break;
             case "implementation":
                 $.get('/redcompartida/static/mustache/implementation.mustache', function(html) {
-                    var template = html //document.getElementById('planning_template').innerHTML;
-                    Mustache.parse(template);
-                    document.getElementById('target').innerHTML = Mustache.render(template, { ocds: ocds.data.releases[0], implementation: ocds.data.releases[0].contracts[0].implementation, links: links.data });
+                    var template = Handlebars.compile(html);
+                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, implementation: ocds.data.releases[0].contracts[0].implementation });
                 });
                 break;
         }

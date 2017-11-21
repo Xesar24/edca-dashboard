@@ -18,7 +18,7 @@
     "bootstrap": "^3.3.7",
     "dgm-navbar": "mxabierto/dgm-navbar#latest",
     "dgm-footer": "mxabierto/dgm-footer#latest",
-    "mustache.js": "mustache#^2.3.0",
-    "axios": "^0.17.1"
+    "axios": "^0.17.1",
+    "mustache.js": "mustache#^2.3.0"
   }
 }

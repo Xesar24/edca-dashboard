@@ -63,15 +63,21 @@
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
 
-               {{#ocds.tender.items}}
-                <strong> {{description}}  </strong>
-                <ul>
-                    <li>id: {{id}} </li>
-                    <li>Unidad: {{unit.name}} </li>
-                    <li>Cantidad: {{quantity}} </li>
-                </ul>
+                {{#if ocds.tender.items}}
+                    {{#ocds.tender.items}}
+                        <strong> {{description}}  </strong>
+                        <ul>
+                            <li>id: {{id}} </li>
+                            <li>Unidad: {{unit.name}} </li>
+                            <li>Cantidad: {{quantity}} </li>
+                        </ul>
 
-                {{/ocds.tender.items}}
+                    {{/ocds.tender.items}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
 
             </div>
         </div>
@@ -88,16 +94,22 @@
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
 
-                {{#ocds.tender.milestones }}
-                <strong> {{title}} </strong>
-                <ul>
-                    <li>{{id}}</li>
-                    <li>{{description}} </li>
-                    <li>{{dueDate}} </li>
-                    <li>{{dateModified}} </li>
-                    <li>{{status}} </li>
-                </ul>
-                {{/ocds.tender.milestones }}
+                {{#if ocds.tender.milestones}}
+                    {{#ocds.tender.milestones }}
+                        <strong> {{title}} </strong>
+                        <ul>
+                            <li>{{id}}</li>
+                            <li>{{description}} </li>
+                            <li>{{dueDate}} </li>
+                            <li>{{dateModified}} </li>
+                            <li>{{status}} </li>
+                        </ul>
+                    {{/ocds.tender.milestones }}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
 
             </div>
         </div>
@@ -114,6 +126,7 @@
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
 
+                {{#if ocds.tender.documents}}
                 {{#ocds.tender.documents}}
                     <strong>{{ title }}</strong>
                     <ul>
@@ -121,6 +134,11 @@
                         <li> URL: {{ url }}</li>
                     </ul>
                 {{/ocds.tender.documents}}
+                    {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>

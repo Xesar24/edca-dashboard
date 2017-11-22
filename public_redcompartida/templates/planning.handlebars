@@ -50,8 +50,8 @@
     </div>
     <div class="col-md-3">
         <a href="{{ links.pdf.url }}" download="pdf">
-        <p class="small">Descargar contrato</p>
-        <span class="label" data-format="pdf">PDF</span>
+            <p class="small">Descargar contrato</p>
+            <span class="label" data-format="pdf">PDF</span>
         </a>
     </div>
 </div>
@@ -69,13 +69,19 @@
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
 
-                {{#ocds.planning.documents}}
-                <strong>{{ title }}</strong>
-                <ul>
-                    <li> Descripción: {{ description }}</li>
-                    <li> URL: {{ url }}</li>
-                </ul>
-                {{/ocds.planning.documents}}
+                {{#if ocds.planning.documents}}
+                    {{#ocds.planning.documents}}
+                        <strong>{{ title }}</strong>
+                        <ul>
+                            <li> Descripción: {{ description }}</li>
+                            <li> URL: {{ url }}</li>
+                        </ul>
+                    {{/ocds.planning.documents}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
 
             </div>
         </div>

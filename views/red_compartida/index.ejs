@@ -294,7 +294,7 @@
             <div class="info">
                 <h3>Proceso de contratación</h3>
 
-                <p class="title"> Título ... </p>
+                <p class="title" id="contract_title"> Cargando... </p>
 
             </div>
             <div class="stages">
@@ -708,50 +708,56 @@
 
     axios.all([ getOCDS(), getLinks()]).then(axios.spread(function( ocds, links ){
 
-    $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
-        var template = Handlebars.compile(html);
-        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
-    });
+        var title = ocds.data.releases[0].contracts[0].title;
+        title = (title.length < 251)?title:title.substring(0,249).trim() + '...';
+
+        $("#contract_title").text(title);
+
+        $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
+            var template = Handlebars.compile(html);
+            document.getElementById('target').innerHTML = template({title: title, ocds: ocds.data.releases[0], links: links.data });
+        });
 
 
-    //sidebar onclick events
-    $(".etapa").on('click', function (e) {
-        //var selected_li = $(e.target);
-        var stage =  $(this).attr("data-stage");
-        //alert("Cargando etapa: "+ stage );
-        switch (stage){
-            case "planning":
-                $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
-                    var template = Handlebars.compile(html);
-                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
-                });
-                break;
-            case "tender":
-                $.get('/redcompartida/static/templates/tender.handlebars', function(html) {
-                    var template = Handlebars.compile(html);
-                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
-                });
-                break;
-            case "awards":
-                $.get('/redcompartida/static/templates/awards.handlebars', function(html) {
-                    var template = Handlebars.compile(html);
-                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, award: ocds.data.releases[0].awards[0] });
-                });
-                break;
-            case "contracts":
-                $.get('/redcompartida/static/templates/contracts.handlebars', function(html) {
-                    var template = Handlebars.compile(html);
-                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, contract: ocds.data.releases[0].contracts[0] });
-                });
-                break;
-            case "implementation":
-                $.get('/redcompartida/static/templates/implementation.handlebars', function(html) {
-                    var template = Handlebars.compile(html);
-                    document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, implementation: ocds.data.releases[0].contracts[0].implementation });
-                });
-                break;
-        }
-    });
+        //sidebar onclick events
+        $(".etapa").on('click', function (e) {
+            //var selected_li = $(e.target);
+            var stage =  $(this).attr("data-stage");
+            //alert("Cargando etapa: "+ stage );
+
+            switch (stage){
+                case "planning":
+                    $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
+                        var template = Handlebars.compile(html);
+                        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
+                    });
+                    break;
+                case "tender":
+                    $.get('/redcompartida/static/templates/tender.handlebars', function(html) {
+                        var template = Handlebars.compile(html);
+                        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
+                    });
+                    break;
+                case "awards":
+                    $.get('/redcompartida/static/templates/awards.handlebars', function(html) {
+                        var template = Handlebars.compile(html);
+                        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, award: ocds.data.releases[0].awards[0] });
+                    });
+                    break;
+                case "contracts":
+                    $.get('/redcompartida/static/templates/contracts.handlebars', function(html) {
+                        var template = Handlebars.compile(html);
+                        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, contract: ocds.data.releases[0].contracts[0] });
+                    });
+                    break;
+                case "implementation":
+                    $.get('/redcompartida/static/templates/implementation.handlebars', function(html) {
+                        var template = Handlebars.compile(html);
+                        document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, implementation: ocds.data.releases[0].contracts[0].implementation });
+                    });
+                    break;
+            }
+        });
 
     })).catch(function(error){ console.log(error);})
 

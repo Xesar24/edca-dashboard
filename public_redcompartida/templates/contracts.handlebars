@@ -22,8 +22,12 @@
     <div class="col-md-3">
         <p class="small">Monto</p>
         <p><strong>
-               {{ contract.value.amount }}
-            </strong></p>
+            {{#if contract.value.amount}}
+                {{ contract.value.amount }}
+            {{else}}
+                En proceso
+            {{/if}}
+        </strong></p>
         <p class="small">Moneda </p>
         <p class="semi-bold"> {{ contract.value.currency }}</p>
     </div>

@@ -10,7 +10,7 @@
     <div class="col-md-6">
         <p class="small">Fecha de adjudicación</p>
         <p class="semi-bold">
-           {{ award.date }}
+            {{ award.date }}
         </p>
     </div>
 </div>
@@ -18,14 +18,22 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Tipo</p>
-        <p class="semi-bold">{{ocds.tender.procurementmethod }}</p>
+        {{#if ocds.tender.procurementmethod}}
+            <p class="semi-bold">{{ocds.tender.procurementmethod }}</p>
+        {{else}}
+            En proceso
+        {{/if}}
     </div>
 
     <div class="col-md-3">
         <p class="small">Monto</p>
         <p><strong>
-               {{ award.value.amount }}
-            </strong></p>
+            {{#if award.value.amount}}
+                {{ award.value.amount }}
+            {{else}}
+                En proceso
+            {{/if}}
+        </strong></p>
         <p class="small">Moneda </p>
         <p class="semi-bold">{{ award.value.currency }}</p>
     </div>
@@ -57,6 +65,7 @@
         <a href="{{ links.xlsx.url }}" download="xlsx">  <span class="label" data-format="xlsx">XLSX</span></a>
     </div>
     <div class="col-md-3">
+
         <a href="{{links.pdf.url}}" download="pdf">
             <p class="small">Descargar contrato</p>
             <span class="label" data-format="pdf">PDF</span>
@@ -78,12 +87,18 @@
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
 
-                {{#award.suppliers}}
-                <strong>{{name }}</strong>
-                <ul>
-                    <li>RFC: {{ id }}</li>
-                </ul>
-                {{/award.suppliers}}
+                {{#if award.suppliers}}
+                    {{#award.suppliers}}
+                        <strong>{{name }}</strong>
+                        <ul>
+                            <li>RFC: {{ id }}</li>
+                        </ul>
+                    {{/award.suppliers}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -98,15 +113,21 @@
         </div>
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
-                {{#award.items}}
-                    <strong> {{description}}  </strong>
-                    <ul>
-                        <li>id: {{id}} </li>
-                        <li>Unidad: {{unit.name}} </li>
-                        <li>Cantidad: {{quantity}} </li>
-                    </ul>
+                {{#if award.items}}
+                    {{#award.items}}
+                        <strong> {{description}}  </strong>
+                        <ul>
+                            <li>id: {{id}} </li>
+                            <li>Unidad: {{unit.name}} </li>
+                            <li>Cantidad: {{quantity}} </li>
+                        </ul>
 
-                {{/award.items}}
+                    {{/award.items}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -121,13 +142,19 @@
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
-                {{#award.documents}}
-                    <strong>{{ title }}</strong>
-                    <ul>
-                        <li> Descripción: {{ description }}</li>
-                        <li> URL: {{ url }}</li>
-                    </ul>
-                {{/award.documents}}
+                {{#if award.documents}}
+                    {{#award.documents}}
+                        <strong>{{ title }}</strong>
+                        <ul>
+                            <li> Descripción: {{ description }}</li>
+                            <li> URL: {{ url }}</li>
+                        </ul>
+                    {{/award.documents}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>

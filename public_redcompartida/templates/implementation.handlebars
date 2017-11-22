@@ -39,16 +39,24 @@
         </div>
         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
             <div class="panel-body">
-                {{#implementation.milestones }}
-                    <strong> {{title}} </strong>
-                    <ul>
-                        <li>{{id}}</li>
-                        <li>{{description}} </li>
-                        <li>{{dueDate}} </li>
-                        <li>{{dateModified}} </li>
-                        <li>{{status}} </li>
-                    </ul>
-                {{/implementation.milestones }}
+                {{#if implementation.milestones}}
+                    {{#implementation.milestones }}
+                        <strong> {{title}} </strong>
+                        <ul>
+                            <li>{{id}}</li>
+                            <li>{{description}} </li>
+                            <li>{{dueDate}} </li>
+                            <li>{{dateModified}} </li>
+                            <li>{{status}} </li>
+                        </ul>
+                    {{/implementation.milestones }}
+                {{else}}
+                    <p>
+                        <strong>
+                            En proceso
+                        </strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -64,17 +72,22 @@
         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
             <div class="panel-body">
 
-                {{#implementation.transactions}}
-                    <strong> Transacción <%= i %> </strong>
-                    <ul>
-                        <li>ID: {{id}}></li>
-                        <li>Origen: {{source}}</li>
-                        <li>Fecha de implementación: {{ date }}</li>
-                        <li>Monto: {{value.amount }}</li>
-                        <li>Moneda: {{ value.currency }}</li>
-                    </ul>
+                {{#if implementation.transactions}}
+                    {{#implementation.transactions}}
+                        <strong> Transacción {{id}} </strong>
+                        <ul>
+                            <li>Origen: {{source}}</li>
+                            <li>Fecha de implementación: {{ date }}</li>
+                            <li>Monto: {{value.amount }}</li>
+                            <li>Moneda: {{ value.currency }}</li>
+                        </ul>
 
-               {{/implementation.transactions}}
+                    {{/implementation.transactions}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>
@@ -89,13 +102,19 @@
         </div>
         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
             <div class="panel-body">
-                {{#implementation.documents}}
-                    <strong>{{ title }}</strong>
-                    <ul>
-                        <li> Descripción: {{ description }}</li>
-                        <li> URL: {{ url }}</li>
-                    </ul>
-                {{/implementation.documents}}
+                {{#if implementation.documents}}
+                    {{#implementation.documents}}
+                        <strong>{{ title }}</strong>
+                        <ul>
+                            <li> Descripción: {{ description }}</li>
+                            <li> URL: {{ url }}</li>
+                        </ul>
+                    {{/implementation.documents}}
+                {{else}}
+                    <p>
+                        <strong>En proceso</strong>
+                    </p>
+                {{/if}}
             </div>
         </div>
     </div>

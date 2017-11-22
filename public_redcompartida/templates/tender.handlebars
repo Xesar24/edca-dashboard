@@ -19,7 +19,14 @@
     </div>
     <div class="col-md-3">
         <p class="small">Monto</p>
-        <p><strong>{{ ocds.tender.value.amount }}</strong></p>
+        {{#if ocds.tender.value.amount}}
+            <p><strong>{{format_amount ocds.tender.value.amount }}</strong></p>
+        {{else}}
+            <p>
+                <strong>En proceso</strong>
+            </p>
+        {{/if}}
+
         <p class="small"> Moneda</p>
         <p class="semi-bold">{{ ocds.tender.value.currency}} </p>
     </div>
@@ -127,14 +134,14 @@
             <div class="panel-body">
 
                 {{#if ocds.tender.documents}}
-                {{#ocds.tender.documents}}
-                    <strong>{{ title }}</strong>
-                    <ul>
-                        <li> Descripción: {{ description }}</li>
-                        <li> URL: {{ url }}</li>
-                    </ul>
-                {{/ocds.tender.documents}}
-                    {{else}}
+                    {{#ocds.tender.documents}}
+                        <strong>{{ title }}</strong>
+                        <ul>
+                            <li> Descripción: {{ description }}</li>
+                            <li> URL: {{ url }}</li>
+                        </ul>
+                    {{/ocds.tender.documents}}
+                {{else}}
                     <p>
                         <strong>En proceso</strong>
                     </p>

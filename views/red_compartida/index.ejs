@@ -696,6 +696,13 @@
 <script src="/redcompartida/static/bower_components/axios/dist/axios.min.js"></script>
 
 <script>
+    Handlebars.registerHelper('format_amount', function (amount){
+        return amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    })
+
+    Handlebars.registerHelper('format_date', function(date){
+        return date;
+    });
 
 
     function getOCDS(){

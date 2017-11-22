@@ -23,7 +23,7 @@
         <p class="small">Monto</p>
         <p><strong>
             {{#if contract.value.amount}}
-                {{ contract.value.amount }}
+                {{format_amount contract.value.amount }}
             {{else}}
                 En proceso
             {{/if}}

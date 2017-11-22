@@ -29,7 +29,7 @@
         <p class="small">Monto</p>
         <p><strong>
             {{#if award.value.amount}}
-                {{ award.value.amount }}
+                {{format_amount award.value.amount }}
             {{else}}
                 En proceso
             {{/if}}

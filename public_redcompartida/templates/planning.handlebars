@@ -19,7 +19,13 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Monto</p>
-        <p><strong>{{ ocds.planning.budget.value.amount}}</strong></p>
+        {{#if ocds.planning.budget.value.amount}}
+            <p><strong>{{format_amount ocds.planning.budget.value.amount}}</strong></p>
+        {{else}}
+            <p>
+                <strong>En proceso</strong>
+            </p>
+        {{/if}}
     </div>
     <div class="col-md-3">
         <p class="small">Moneda </p>

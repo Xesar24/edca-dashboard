@@ -306,7 +306,7 @@ and (max-device-width: 736px){
 }
 
 .statistics ul.chart-legend                 { padding: 30px 0 0; list-style: none; padding-top: 10px }
-.statistics ul.chart-legend > li            { margin-bottom: 10px; font-size: 11px; font-weight: 300; color: #000; }
+.statistics ul.chart-legend > li            { margin-bottom: 10px; font-size: 14px; font-weight: 300; color: #000; }
 
 .search-form {
     margin-top: 20px;
@@ -327,16 +327,17 @@ and (max-device-width: 736px){
     font-size: 14px;
     padding: 12.5px 0;
 }*/
-#btnBuscaContrato .search-form .btn-primary, .search-form .btn-primary:hover {
+/*#btnBuscaContrato .search-form .btn-primary, .search-form .btn-primary:hover {
     width: 4%;
     background-color: transparent;
     color: #9b9b9b;
     font-size: 14px;
     padding: 12.5px 0;
-}
+}*/
 
 .search-form .btn-primary {
     background-color: #4a4a4a;
+    border-color: transparent;
 }
 .search-form .btn {
     display: inline-block;
@@ -391,4 +392,150 @@ html, body {
     line-height: 1.6em;
     font-family: "Open Sans";
     /*font-weight: 300;*/
+}
+
+dgm-footer {
+     position: relative;
+}
+
+.nav-pills > li > a:hover, .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #0c9;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-pills > li > a {
+    display: block;
+    padding: 10px 0;
+    background-color: #9b9b9b;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.nav-pills > li {
+    display: block;
+    margin: 0;
+    margin-right: 20px;
+    width: 270px;
+    float: left;
+}
+
+h1 {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: #545454;
+}
+
+h1:after {
+    content: '';
+    width: 40px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-bottom: solid 5px #0c9;
+}
+
+.data-table table > tbody > tr > td {
+    padding-bottom: 10px;
+    border-top-color: #d8d8d8;
+}
+
+.navbar-default {
+    background-color: #f6f6f6;
+}
+
+.tab-content {
+    padding: 0px 0px;
+}
+
+.data-table {
+    margin-bottom: 30px;
+    padding: 30px 20px;
+    background-color: #efefef;
+    border-radius: 4px;
+}
+
+.panel-group .panel {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    /*padding-bottom: 5px;*/
+}
+
+.panel-default > .panel-heading {
+    margin-top: 0px;
+    padding: 0;
+    background-color: #c0c0c0;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+.panel-title {
+    font-size: 12px;
+    font-weight: 700;
+}
+p.small {
+    font-size: 11px;
+}
+
+.panel-default > .panel-heading a {
+    display: block;
+    padding: 15px;
+    position: relative;
+}
+
+/*********************************
+    FONTS STYLES
+*********************************/
+h3                                          { font-size: 26px; line-height: 1.6em; font-weight: 300; color: #595959; }
+.label                                      { font-size: 12px; font-weight: 700; color: #fff; text-transform: uppercase; border-radius: 0; }
+.label[data-format="csv"],
+.label[data-format="CSV"]                   { background-color: #ffd100; }
+.label[data-format="kml"],
+.label[data-format="KML"]                   { background-color: #474747; }
+.label[data-format="json"],
+.label[data-format="JSON"]                  { background-color: #33ffd1; }
+.label[data-format="pdf"],
+.label[data-format="PDF"]                   { background-color: #ff2200; }
+.label[data-format="arcgis"],
+.label[data-format="ARCGIS"]                { background-color: #d100FF; }
+.label[data-format="xlsx"],
+.label[data-format="xls"],
+.label[data-format="excel"],
+.label[data-format="vnd.ms-excel"],
+.label[data-format="EXCEL"],
+.label[data-format="VND.MS-EXCEL"],
+.label[data-format="XLS"],
+.label[data-format="XLSX"]                  { background-color: #00d100; }
+.label[data-format="xml"],
+.label[data-format="XML"]                   { background-color: #0000d1; }
+.label[data-format="oracle"],
+.label[data-format="ORACLE"]                { background-color: #55bada; }
+.label[data-format="shp"],
+.label[data-format="SHP"]                   { background-color: #bada55; }
+.label[data-format="kmz"],
+.label[data-format="KMZ"]                   { background-color: #55adab; }
+.label[data-format="zip"],
+.label[data-format="ZIP"]                   { background-color: #001dff; }
+a.load-more                                 { text-transform: uppercase; font-size: 12px; font-weight: 300; color: #00d2a9; }
+a.load-more:hover                           { font-weight: 600; }
+#section-title                              { padding-top: 30px; padding-bottom: 30px; background-color: #eee; }
+#section-title h1                           { margin-top: 0; margin-bottom: 20px; font-size: 24px; font-weight: 700; color: #595959; }
+#section-title p                            { font-size: 14px; font-weight: 300; margin-bottom: 0; }
+@media (max-width: 991px)                   { h1 { font-size: 20px; } p { font-size: 12px; } }
+
+.search-form .btn-primary, .search-form .btn-primary:hover {
+    width: 4%;
+    background-color: transparent;
+    color: #9b9b9b;
+    font-size: 14px;
+    padding: 12.5px 0;
 }

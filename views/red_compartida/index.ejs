@@ -8,7 +8,7 @@
     <meta name="description" content="En datos.gob.mx puedes descargar y utilizar libremente datos abiertos que el Gobierno de la República genera y recolecta.">
 
     <!-- style -->
-    <!--<link rel="stylesheet" type="text/css" href="/contratacionesabiertas/redcompartida/static/assets/style.css">-->
+    <link rel="stylesheet" type="text/css" href="/redcompartida/static/stylesheets/style.css">
 
     <style>
         body {transition: opacity ease-in 0.2s; }
@@ -20,6 +20,7 @@
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-navbar/dgm-navbar.html">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-footer/dgm-footer.html">
     <link rel='stylesheet' href='/contratacionesabiertas/static/stylesheets/contrato.css'/>
+    <link rel='stylesheet' href='<%= process.env.CDN_URL %>/assets/css/main.css' />
 
     <!-- Google Analytics -->
     <script type="text/javascript">
@@ -39,8 +40,8 @@
     <!-- End Google Analytics -->
 
     <!-- Used libraries -->
-    <link rel="stylesheet" href="/redcompartida/static/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/redcompartida/static/assets/main.css">
+    <!-- <link rel="stylesheet" href="/redcompartida/static/bower_components/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="/redcompartida/static/assets/main.css"> -->
 
     <link rel="canonical" href="https://datos.gob.mx//redcompartida/">
     <link rel="alternate" type="application/rss+xml" title="Guía de Datos Abiertos para México" href="https://datos.gob.mx//feed.xml">
@@ -49,187 +50,7 @@
 
 <body>
 
-<style>
-    /* Page */
-    .row {
-        margin-left: -10px;
-        margin-right: 8px;
-    }
-    h3.jumbo-title {
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 10px;
-    }
-    #highlights .btn {
-        margin-top: 40px;
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
-    #banner {
-        text-align: left;
-    }
-    #banner .heading {
-        font-size: 12px;
-        color: #fff;
-        padding-left: 0;
-    }
-    #banner .links {
-        text-align: right;
-    }
-    #banner .links a {
-        color: rgb(32,121,95);
-        font-weight: bold;
-        font-size: 12px;
-        margin-left: 20px;
-    }
-    #highlights .container-fluid {
-        padding-left: 0;
-    }
-    #info {
-        padding: 40px 0;
-    }
-    .select-box {
-        text-align: center;
-        font-weight: 700;
-        font-size: 12px;
-        color: /*#f6f6f6;*/rgb(34,134,105);
-        display: inline-block;
-        cursor: pointer;
-        margin-left: 10px;
-    }
-    .select-box-active, .select-box:hover {
-        color: #0c9;
-    }
-    .select-box-inactive {
-        color: rgb(64,164,135);
-    }
-    .select-box-inactive:hover {
-        color: rgb(64,164,135);
-    }
-    h3#sec-label {
-        font-weight: 700;
-    }
-    /* viz */
-    #chart {
-        position: relative;
-    }
-    .node {
-        cursor: pointer;
-    }
-
-    .node circle {
-        fill: #fff;
-        stroke: rgb(71,71,71);
-        stroke-width: 1.5px;
-    }
-
-    .node text {
-        font: 10px 'Open Sans', sans-serif;
-        font-weight: 700;
-        fill: '#666';
-    }
-
-    .link {
-        fill: none;
-        stroke: #ccc;
-        stroke-width: 16px;
-        stroke-opacity: 0.65;
-        background-color: rgb(71,71,71);
-    }
-    .link:hover {
-        stroke: rgb(0,204,153);
-    }
-    .separator {
-        border-bottom: 2px solid rgb(0,204,153);
-        border-top: 2px solid rgb(0,204,153);
-        width: 20px;
-        display: inline-block;
-    }
-    div.ttip {
-        position: absolute;
-        text-align: left;
-        width: 200px;
-        padding: 5px;
-        font: 10px 'Open Sans', sans-serif;
-        background-color: rgb(71,71,71);
-        color: #fff;
-        border: 0px;
-        border-radius: 8px;
-        pointer-events: none;
-    }
-    div.infobox {
-        position: absolute;
-        text-align: left;
-        width: 320px;
-        padding: 10px;
-        font: 12px 'Open Sans', sans-serif;
-        line-height: 18px;
-        background-color: #f6f6f6;
-        color: #444;
-        border: 0px;
-        border-radius: 8px;
-        max-height: 400px;
-        overflow-y: scroll;
-        z-index: 10;
-    }
-    table.datos a {
-        margin-top: 5px;
-        color: #00cc99;
-    }
-    table.datos {
-        border-collapse: collapse;
-        font-size: 12px;
-        margin-bottom: 40px;
-    }
-    table.datos td {
-        margin-bottom: 10px;
-    }
-    .fformat {
-        padding: 2px 4px;
-        background-color: #222;
-        color: #fff;
-        font-weight: 700;
-    }
-    table.datos thead th {
-        padding-bottom: 10px;
-        padding: 10px 20px;
-        font-size: 12px;
-    }
-    tr.datos-indicador td {
-        background-color: rgb(238,238,238);
-        padding: 20px;
-        vertical-align: top;
-    }
-    tr.datos-indicador td.nombre-ind {
-        font-weight: 600;
-    }
-    h2.page-title {
-        font-weight: 300;
-    }
-    h4 {
-        font-weight: 700;
-    }
-    header.page-header {
-        background-color: rgb(246,246,246);
-        margin: 0;
-        padding-bottom: 30px;
-    }
-    circle.current {
-        fill: rgb(250,105,105) !important;
-        stroke: rgb(250,105,105) !important;
-    }
-
-    .well{
-        border: none;
-    }
-
-    .container{
-        max-width: 1100px;
-    }
-</style>
-
-
-<div id="system-notification" class="container-fluid">
+<!-- <div id="system-notification" class="container-fluid">
     <div class="row">
         <div class="notification-container">
             <div class="notification">
@@ -238,7 +59,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
 <dgm-navbar></dgm-navbar>
@@ -288,7 +109,7 @@
 
 <!-- Detalle del contrato-->
 
-<div class="container">
+<div id="principal" class="container">
     <div class="row">
         <div id="contract-sidebar" class="col-md-4 col-sm-4 col-xs-12 sidebar">
             <div class="info">
@@ -304,31 +125,31 @@
                     <li class='active etapa' data-stage="planning">
                         <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-planeacion.png">
                         <img class="hover-image" src="/contratacionesabiertas/static/images/ic-planeacion.png">
-                        <a href="#">Planeación </a>
+                        <a href="#principal">Planeación </a>
                     </li>
                     <!-- Licitación -->
                     <li class="etapa" data-stage="tender">
                         <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-licitacion.png">
                         <img class="hover-image" src="/contratacionesabiertas/static/images/ic-licitacion.png">
-                        <a href="#">Concurso</a>
+                        <a href="#principal">Concurso</a>
                     </li>
                     <!-- Adjudicación -->
                     <li class="etapa" data-stage="awards">
                         <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-adjudicacion.png">
                         <img class="hover-image" src="/contratacionesabiertas/static/images/ic-adjudicacion.png">
-                        <a href="#">Adjudicación</a>
+                        <a href="#principal">Adjudicación</a>
                     </li>
                     <!-- Contrato -->
                     <li class="etapa" data-stage="contracts">
                         <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-contratacion.png">
                         <img class="hover-image" src="/contratacionesabiertas/static/images/ic-contratacion.png">
-                        <a href="#">Contratación</a>
+                        <a href="#principal">Contratación</a>
                     </li>
                     <!-- Implementación -->
                     <li class="etapa" data-stage="implementation">
                         <img class="normal-image" src="/contratacionesabiertas/static/images/ic-menu-implementacion.png">
                         <img class="hover-image" src="/contratacionesabiertas/static/images/ic-implementacion.png">
-                        <a href="#">Implementación</a>
+                        <a href="#principal">Implementación</a>
                     </li>
                 </ul>
             </div>
@@ -770,4 +591,10 @@
 
 </script>
 </body>
+<script>
+    $("ul li").on("click", function() {
+      $("ul li").removeClass("active");
+      $(this).addClass("active");
+    });
+</script>
 </html>

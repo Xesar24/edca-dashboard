@@ -51,3 +51,91 @@ and (max-device-width: 736px){
     .stages h1 {font-size: 16px}
     .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {padding: 4px;}
 }
+
+.bgimg h2 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #fff;
+}
+
+.bgimg img {
+    width: 80px;
+}
+
+.bgimg h4 {
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #fff;
+}
+
+.bgimg .stat {
+    font-size: 36px;
+}
+
+.bgimg p {
+    color: #fff;
+}
+
+.bgimg {
+    height: 400px;
+    margin-bottom: 0px;
+    padding: 30px 0;
+    /*background: #424242;*/
+    /*background-size: 1024px 270px;*/
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.bgimg h5 {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+}
+
+h1 {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d8d8d8;
+    position: relative;
+    font-size: 24px;
+    font-weight: 600;
+    color: #545454;
+}
+
+dgm-footer {
+    position: static;
+}
+h1:after {
+    content: '';
+    width: 40px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    border-bottom: solid 5px #0c9;
+}
+
+.data-table table>tbody>tr>td>a {
+    font-weight: 500;
+    color: #545454;
+}
+
+.data-table table > tbody > tr > td > a {
+    font-weight: 500;
+    color: #0c9;
+}
+
+.data-table table>tbody>tr>td {
+    font-size: 14px;
+    padding-bottom: 20px;
+    border-top-color: #f6f6f6;
+}
+
+.data-table table > tbody > tr > td {
+    padding-bottom: 10px;
+    border-top-color: #d8d8d8;
+}

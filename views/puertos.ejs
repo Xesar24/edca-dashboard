@@ -10,7 +10,8 @@
 
     <link href="/puertosabiertos/static/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/puertosabiertos/static/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
-    <link rel='stylesheet' href='/puertosabiertos/static/stylesheets/main.css'>
+    <!-- <link rel='stylesheet' href='/puertosabiertos/static/stylesheets/main.css'> -->
+    <link rel='stylesheet' href='<%= process.env.CDN_URL %>/assets/css/main.css' />
     <link rel="stylesheet" href="/puertosabiertos/static/stylesheets/dashboard.css">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/polymer/polymer.html">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-navbar/dgm-navbar.html">
@@ -38,18 +39,7 @@
 </head>
 <body>
 <dgm-navbar></dgm-navbar>
-<div class="breadcrumb-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <ul class="breadcrumb">
-                    <li><a href="/puertosabiertos"><i class="glyphicon glyphicon-home"></i></a></li>
-                    <li><a href="/puertosabiertos" style="text-transform: none">puertosabiertos</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
 <div class="bgimg">
     <div class="container">
         <div class="row">
@@ -79,7 +69,18 @@
         </div>
     </div>
 </div>
-
+<div class="breadcrumb-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><a href="/puertosabiertos"><i class="glyphicon glyphicon-home"></i></a></li>
+                    <li><a href="/puertosabiertos" style="text-transform: none">puertosabiertos</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container statistics">
 
@@ -504,6 +505,16 @@
     (function () {
         $( '.bootstrap-select' ).selectpicker();
     })();
+</script>
+<script type="text/javascript">
+    function toggleIcon(e) {
+        $(e.target)
+            .prev('.panel-heading')
+            .find(".more-less")
+            .toggleClass('glyphicon-chevron-right glyphicon-chevron-down');
+    }
+    $('.panel-group').on('hidden.bs.collapse', toggleIcon);
+    $('.panel-group').on('shown.bs.collapse', toggleIcon);
 </script>
 </body>
 </html>

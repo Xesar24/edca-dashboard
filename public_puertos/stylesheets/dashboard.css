@@ -243,7 +243,7 @@ dgm-footer {
 
 .methodology {
     background-color: #f6f6f6;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     padding: 30px 0;
 }
 
@@ -264,8 +264,13 @@ dgm-footer {
     cursor: default;
 }
 
+.nav-tabs > li.active > a, .nav-tabs > li:hover > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border: none;
+    background-color: transparent;
+    color: #00d2a9;
+}
+
 .nav-tabs > li > a {
-    padding: 10px 0;
     background-color: transparent;
     font-size: 12px;
     font-weight: 600;
@@ -273,6 +278,10 @@ dgm-footer {
     text-transform: uppercase;
     border: none;
     border-radius: 0;
+}
+
+.tabs-left>li, .tabs-right>li {
+    margin-bottom: 0px !important;
 }
 
 .container {
@@ -301,4 +310,26 @@ dgm-footer {
 .tab-content {
     padding: 30px 15px;
     background-color: transparent;
+}
+
+.stages-widget img {
+    width: 35px;
+    margin-right: 10px;
+    float: left;
+}
+
+.stages-widget .title {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #0c9;
+}
+
+.stages-widget .content {
+    width: calc(100% - 45px);
+    float: left;
+}
+
+.stages-widget p {
+    margin-bottom: 50px;
+    font-size: 14px;
 }

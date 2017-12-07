@@ -5,7 +5,7 @@
     "Objeto del Contrato",
     "Contratista",
     "Importe comprometido",
-    "Importe pagado al 30-09-17",
+    "Importe pagado al 31-10-17",
     "Avance físico",
     "Avance financiero"
   ],
@@ -18,9 +18,9 @@
           "Nivelación y Limpieza",
           "COCONAL S.A. P. I. DE CV",
           "$1,902,808,440.74",
-          "$1,820,226,554.41",
-          "97.98%",
-          "95.66%"
+          "$1,847,575,401.45",
+          "100.00%",
+          "96.93%"
         ],
         [
           2,
@@ -28,7 +28,7 @@
           "Caminos Provisionales",
           "CONSORCIO INTEGRADO POR: TRANSPORTACIONES Y CONSTRUCCIONES TAMAULIPECOS, SA DE CV. E INMOBILIARIOS MEXICANOS, SA DE CV",
           "$608,275,577.50",
-          "$483,153,291.21",
+          "$488,701,043.32",
           "77.54%",
           "79.43%"
         ],
@@ -48,8 +48,8 @@
           "Drenaje Pluvial Temporal",
           "PARTICIPACIÓN CONJUNTA: CALZADA CONSTRUCCIONES, SA DE CV Y CONSTRUCCIONES Y DRAGADOS DEL SURESTE, SA DE CV",
           "$243,253,417.07",
-          "$197,983,956.15",
-          "98.20%",
+          "$196,022,223.55",
+          "99.00%",
           "81.39%"
         ],
         [
@@ -58,7 +58,7 @@
           "Remoción de Escombros",
           "PARTICIPACIÓN CONJUNTA: OMEGA CONSTRUCCIONES INDUSTRIALES, SA DE CV, CALZADA CONSTRUCCIONES, SA DE CV Y CONSTRUCCIONES Y DRAGADOS DEL SURESTE, SA DE CV",
           "$833,926,929.04",
-          "$833,676,750.96",
+          "$777,784,351.66",
           "100.00%",
           "99.97%"
         ],
@@ -79,7 +79,7 @@
           "SEDENA",
           "$950,000,000.00",
           "$950,000,000.00",
-          "92.75%",
+          "97.73%",
           "100.00%"
         ],
         [
@@ -88,8 +88,8 @@
           "Desarrollo de ingeniería y construcción de subestaciones y acometida eléctrica",
           "PROYECTOS Y CONSTRUICCIONES URISA S.A. DE C.V.",
           "$1,114,845,394.31",
-          "$170,794,314.41",
-          "11.25%",
+          "$170,792,061.44",
+          "46.60%",
           "15.32%"
         ]
       ]
@@ -99,43 +99,43 @@
       "rows": [
         [
           1,
-          "LPI-OP-DCAGI-SC-011-17",
-          "Torre de control",
-          "CONSTRUCCIONES ALDESEM S.A. DE C.V. ALDESA CONSTRUCCIONES S.A. JAGUAR INGENIEROS CONSTRUCTORES S.A. DE C.V.",
-          "$1,242,171,349.64",
-          "$49,935,288.26",
-          "3.41%",
-          "4.02%"
-        ],
-        [
-          2,
-          "LPI-OP-DCAGI-SC-002-17",
-          "Edificio terminal de pasajeros",
-          "CONSTRUCTORA TERMINAL VALLE DE MÉXICO S.A. DE C.V.",
-          "$84,828,377,320.13",
-          "$3,257,409,689.09",
-          "2.49%",
-          "3.84%"
-        ],
-        [
-          3,
           "LPI-OP-DCAGI-SC-070-16",
           "Pilotes de Cimentación",
           "GAMI INGENIERÍA E INSTALACIONES S.A. DE C.V.",
           "$822,363,697.05",
-          "$747,775,309.73",
-          "97.13%",
+          "$646,299,946.78",
+          "99.63%",
           "90.93%"
         ],
         [
-          4,
+          2,
           "LPI-OP-DCAGI-SC-080-16",
           "Losa de cimentación ETP",
           "ICA CONSTRUTORA DE INFRAESTRUCTURA S.A. DE C.V.; IMPULSORA DE DESARROLLO INTEGRAL S.A. DE C.V.; CONSTRUCCIONES Y TRITURACIONES S.A. DE C.V.; CONTROLADORA DE OPERACIONES DE INFRAESTRUCTURA S.A. DE C.V.; CONSTRUCTORA EL CAJÓN S.A. DE C.V.",
           "$7,555,647,477.04",
-          "$705,697,474.36",
-          "7.75%",
-          "9.34%"
+          "$802,278,813.75",
+          "12.50%",
+          "10.20%"
+        ],
+        [
+          3,
+          "LPI-OP-DCAGI-SC-002-17",
+          "Edificio terminal de pasajeros",
+          "CONSTRUCTORA TERMINAL VALLE DE MÉXICO S.A. DE C.V.",
+          "$84,828,377,320.13",
+          "$3,282,049,033.56",
+          "3.80%",
+          "3.87%"
+        ],
+        [
+          4,
+          "LPI-OP-DCAGI-SC-011-17",
+          "Torre de control",
+          "CONSTRUCCIONES ALDESEM S.A. DE C.V. ALDESA CONSTRUCCIONES S.A. JAGUAR INGENIEROS CONSTRUCTORES S.A. DE C.V.",
+          "$1,242,171,349.64",
+          "$63,038,454.63",
+          "7.22%",
+          "5.02%"
         ],
         [
           5,
@@ -143,9 +143,9 @@
           "Losa de cimentación CTT",
           "SACYR EPCCOR NAICM S.A.P.I. DE C.V.",
           "$1,399,983,017.99",
-          "$193,897,647.99",
-          "14.68%",
-          "13.85%"
+          "$213,993,439.22",
+          "18.53%",
+          "14.68%"
         ]
       ]
     },
@@ -158,9 +158,9 @@
           "Pista 2",
           "COCONAL S.A.P.I, CONSTRUCTORA Y PAVIMENTADORA VISE S.A. DE C.V.",
           "$7,926,299,964.90",
-          "$3,038,943,406.54",
-          "44.83%",
-          "38.34%"
+          "$3,474,472,107.53",
+          "52.28%",
+          "42.53%"
         ],
         [
           2,
@@ -168,8 +168,8 @@
           "Pista 3",
           "OPERADORA CICSA S.A. DE C.V., CONSTRUCTORA Y EDIFICADORA GIA+A S.A. DE C.V., PROMOTORA Y DESARROLLADORA MEXICANA S.A. DE C.V., LA PENINSULAR COMPAÑÍA CONSTRUCTORA S.A. DE C.V.",
           "$7,359,204,570.23",
-          "$1,995,816,279.45",
-          "27.29%",
+          "$2,289,563,701.88",
+          "31.05%",
           "27.12%"
         ]
       ]

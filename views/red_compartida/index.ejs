@@ -19,7 +19,6 @@
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/polymer/polymer.html">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-navbar/dgm-navbar.html">
     <link rel="import" href="<%= process.env.CDN_URL %>/bower_components/dgm-footer/dgm-footer.html">
-    <link rel='stylesheet' href='/contratacionesabiertas/static/stylesheets/contrato.css'/>
     <link rel='stylesheet' href='<%= process.env.CDN_URL %>/assets/css/main.css' />
 
     <!-- Google Analytics -->
@@ -107,6 +106,13 @@
     </div>
 </div>
 
+
+<div class ="container statistics">
+    <h1>Proyecto</h1>
+    <p>Visualiza y descarga los Datos Abiertos de las etapas de planeación, licitación, adjudicación, contratación,
+        e implementación de la Red Compartida de acuerdo con el Estándar de Datos para Contrataciones Abiertas (EDCA).</p>
+</div>
+
 <!-- Detalle del contrato-->
 
 <div id="principal" class="container">
@@ -118,7 +124,7 @@
                 <p class="title" id="contract_title"> Cargando... </p>
 
             </div>
-            <div class="stages">
+            <div class="stages" id="stg">
                 <p><small>ETAPAS</small></p>
                 <ul>
                     <!-- Planeación -->
@@ -164,67 +170,6 @@
 
 <!-- Fin del detalle del contrato -->
 
-
-<div class ="container statistics">
-    <h1>Proyecto</h1>
-    <p>Visualiza y descarga los Datos
-        Abiertos de las etapas de planeación y concurso de la Red Compartida.
-        Durante el desarrollo del proyecto, trabajaremos junto con la Alianza
-        para las Contrataciones Abiertas para continuar publicando datos
-        accesibles, comparables y oportunos sobre las siguientes etapas de
-        adjudicación, contratación e implementación, conforme estos se generen.
-        Este proyecto es parte de un piloto para adaptar el Estándar de Datos
-        para Contrataciones Abiertas a un modelo de alianza público privado.</p>
-</div>
-
-<!--<section id="info">-->
-<div class="container statistics">
-    <!--<h1 id="sec-label">Planeación</h1>-->
-    <h1>Proceso de contratación</h1>
-
-<p>
-    <!--Haz clic en <b id="sec-label1">Planeación</b> para desplegar los componentes de esta etapa. Continúa dando clics para visualizar información más específica.</p>-->
-    <!--<div class="container-fluid fixed">-->
-    <div class="row">
-        <!--<div class="col-xs-6 heading">Red Compartida</div>-->
-
-        <div class="col-xs-12 links" style="padding-left: 0px">
-
-            <div onmousedown='draw_chart("Planeación")' class="select-box select-box-first Planeación select-box-active">Planeación</div>
-            <div onmousedown='draw_chart("Concurso")' class="select-box Concurso">Licitación</div>
-            <!--<div onmousedown='draw_chart("Adjudicación")' class="select-box Adjudicación">Adjudicación</div>-->
-            <div data-original-title="La información se publicará conforme se genere durante el proyecto." title="" data-toggle="tooltip" data-placement="bottom" class="select-box select-box-inactive Adjudicación">Adjudicación</div>
-            <div data-original-title="La información se publicará conforme se genere durante el proyecto." title="" data-toggle="tooltip" data-placement="bottom" class="select-box select-box-inactive Contratación">Contratación</div>
-            <div data-original-title="La información se publicará conforme se genere durante el proyecto." title="" data-toggle="tooltip" data-placement="bottom" class="select-box select-box-inactive Implementación">Implementación</div>
-
-        </div>
-
-    </div>
-    <!--</div>-->
-
-
-    <!--   <div class="row">
-    <h3 id="sec-label">Planeación</h3>
-    </div>
-        <div class="row">-->
-    <div id="chart"><div style="opacity: 0;" class="infobox"></div>
-        <svg height="500" width="1100">
-            <g transform="translate(80,20)">
-                <path d="M0,230C90,230 90,46 180,46" class="link"></path>
-                <path d="M0,230C90,230 90,138 180,138" class="link"></path>
-                <path d="M0,230C90,230 90,230 180,230" class="link"></path>
-                <path d="M0,230C90,230 90,322 180,322" class="link"></path>
-                <path d="M0,230C90,230 90,414 180,414" class="link"></path>
-                <g transform="translate(180,414)" class="node"><circle style="fill: rgb(68, 68, 68); stroke: rgb(68, 68, 68);" r="8"></circle><text style="fill-opacity: 1;" text-anchor="end" dy=".35em" x="-15">Documentos de la planeación</text></g>
-                <g transform="translate(180,322)" class="node"><circle style="fill: rgb(68, 68, 68); stroke: rgb(68, 68, 68);" r="8"></circle><text style="fill-opacity: 1;" text-anchor="end" dy=".35em" x="-15">Diseño de la APP</text></g>
-                <g transform="translate(180,230)" class="node"><circle style="fill: rgb(68, 68, 68); stroke: rgb(68, 68, 68);" r="8"></circle><text style="fill-opacity: 1;" text-anchor="end" dy=".35em" x="-15">Fundamento</text></g>
-                <g transform="translate(180,138)" class="node"><circle style="fill: rgb(68, 68, 68); stroke: rgb(68, 68, 68);" r="8"></circle><text style="fill-opacity: 1;" text-anchor="end" dy=".35em" x="-15">Aportación pública</text></g>
-                <g transform="translate(180,46)" class="node"><circle style="fill: rgb(68, 68, 68); stroke: rgb(68, 68, 68);" r="8"></circle><text style="fill-opacity: 1;" text-anchor="end" dy=".35em" x="-15">Presupuesto</text></g>
-                <g transform="translate(0,230)" class="node"><circle style="fill: rgb(0, 204, 153); stroke: rgb(0, 204, 153);" r="8"></circle><text style="fill-opacity: 1;" text-anchor="end" dy=".35em" x="-15">Planeación</text></g></g></svg></div>
-    <!--</div>-->
-</div>
-<!--</section>-->
-
 <div class="container statistics">
     <h1>Datos</h1>
 
@@ -244,7 +189,7 @@
                 <td>Red Compartida - Estándar de datos de contrataciones abiertas</td>
                 <td>Secretaría de Comunicaciones y Transportes</td>
                 <td>
-                    <!--<span class="label" data-format="csv">CSV</span>-->
+                    <span class="label" data-format="csv">CSV</span>
                     <span class="label" data-format="xlsx">XLS</span>
                     <!--<span class="label" data-format="pdf">PDF</span>-->
                 </td>
@@ -266,6 +211,13 @@
 <script type="text/javascript" src="<%= process.env.CDN_URL %>/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 <script src="/redcompartida/static/bower_components/jquery/dist/jquery.min.js"></script>
 
+<!--<script src="/redcompartida/static/assets/js.js"></script>-->
+<script src="/redcompartida/static/assets/underscore-min.js" type="text/javascript"></script>
+<script src="/redcompartida/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/redcompartida/static/assets/moment.js"></script>
+<script src="/redcompartida/static/bower_components/handlebars/handlebars.min.js"></script>
+<script src="/redcompartida/static/bower_components/axios/dist/axios.min.js"></script>
+
 <script type="text/javascript">
     function toggleIcon(e) {
         $(e.target)
@@ -275,21 +227,11 @@
     }
     $('.panel-group').on('hidden.bs.collapse', toggleIcon);
     $('.panel-group').on('shown.bs.collapse', toggleIcon);
-</script>
-<script>
+
     $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
     });
-</script>
 
-<!--<script src="/redcompartida/static/assets/js.js"></script>-->
-<script src="/redcompartida/static/assets/underscore-min.js" type="text/javascript"></script>
-<script src="/redcompartida/static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/redcompartida/static/assets/moment.js"></script>
-<script src="/redcompartida/static/bower_components/handlebars/handlebars.min.js"></script>
-
-
-<script>
     $('#api').click(function () {
         window.open("https://datos.gob.mx/busca/dataset/infraestructura-de-telecomunicaciones", "_blank");
     });
@@ -298,223 +240,12 @@
         window.open('http://standard.open-contracting.org/latest/es/getting_started/');
     });*/
 
-</script>
 
-<script>
-    function create_links(text) {
-        var exp = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/i;
-        return text.replace(exp,"<a href='$1'>$1</a>");
-    }
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
+    $("ul li").on("click", function() {
+        $("ul li").removeClass("active");
+        $(this).addClass("active");
     });
-    function draw_chart(l) {
-        var datos = jQuery.extend(true, {}, dt);
-
-        if (datos[l].children.length > 10) multiplier = datos[l].children.length * 0.65;
-        else multiplier = datos[l].children.length;
-
-        $("#chart").empty();
-        //$("h3#sec-label").html(l);
-        //$("#sec-label").html(l);
-        //$("#sec-label1").html(l);
-
-        $('.select-box').removeClass('select-box-active');
-        $('.'+l).addClass('select-box-active');
-
-        var margin = {top: 20, right: 120, bottom: 20, left: 80},
-                width = 1100 - margin.right - margin.left,
-                height = multiplier*100 - margin.top - margin.bottom;
-
-        var tt = d3.select("#d3Tooltip");
-
-        var infobox = d3.select("#chart").append("div")
-                .attr("class", "infobox")
-                .style("opacity", 0);
-
-        var i = 0,
-                duration = 750,
-                root;
-
-        var tree = d3.layout.tree()
-                .size([height, width]);
-
-        var diagonal = d3.svg.diagonal()
-                .projection(function(d) { return [d.y, d.x]; });
-
-        var svg = d3.select("#chart").append("svg")
-                .attr("width", width + margin.right + margin.left)
-                .attr("height", height + margin.top + margin.bottom)
-                .append("g")
-                .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-
-
-        root = datos[l];
-        root.x0 = height / 2;
-        root.y0 = 0;
-
-        function collapse(d) {
-            if (d.children) {
-                d._children = d.children;
-                d._children.forEach(collapse);
-                d.children = null;
-            }
-        }
-
-        root.children.forEach(collapse);
-        update(root);
-
-        d3.select(self.frameElement).style("height", "800px");
-
-        function update(source) {
-            // Compute the new tree layout.
-            var nodes = tree.nodes(root).reverse(),
-                    links = tree.links(nodes);
-
-            nodes.forEach(function(d) { d.children || d._children ? d.y = d.depth * 180 : d.y = d.depth * 140  });
-
-            var node = svg.selectAll("g.node")
-                    .data(nodes, function(d) { return d.id || (d.id = ++i); });
-
-            var nodeEnter = node.enter().append("g")
-                    .attr("class", "node")
-                    .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
-                    .on("click", click);
-
-            nodeEnter.append("circle")
-                    .attr("r", 1e-6)
-                    .style("fill", function(d) { return d._children ? "#444" : "rgb(0,204,153)"; })
-                    .style("stroke", function(d) { return d._children ? "#444" : "rgb(0,204,153)"; });
-
-
-            nodeEnter.append("text")
-                    .attr("x", function(d) { return d.children || d._children ? -15 : 15; })
-                    .attr("dy", ".35em")
-                    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
-                    .text(function(d) { return d.name; })
-                    .style("fill-opacity", 1e-6);
-
-            var nodeUpdate = node.transition()
-                    .duration(duration)
-                    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
-
-            nodeUpdate.select("circle")
-                    .attr("r", 8)
-                    .style("fill", function(d) { return d._children ? "#444" : "rgb(0,204,153)"; })
-                    .style("stroke", function(d) { return d._children ? "#444" : "rgb(0,204,153)"; });
-
-            nodeUpdate.select("text")
-                    .style("fill-opacity", 1);
-
-            nodeEnter.select("circle")
-                    .on("mouseover", function(d) {
-                        if (typeof d.mouseover != 'undefined') {
-                            tt.transition()
-                                    .duration(200)
-                                    .style("opacity", .9);
-                            tt.html(d.mouseover)
-                                    .style("left", (d3.event.pageX + 30) + "px")
-                                    .style("top", (d3.event.pageY - 20) + "px");
-                        }
-                    })
-                    .on("click", function(d) {
-
-                        tt.transition()
-                                .duration(500)
-                                .style("opacity", 0);
-                        infobox.transition()
-                                .duration(500)
-                                .style("opacity", 0);
-                        if (typeof d.info1 != 'undefined') {
-                            d3.selectAll("circle")
-                                    .classed("current", false);
-                            d3.select(this)
-                                    .classed("current", true);
-                            h = "";
-                            if (d.info1 != '') h = h + "<h5>Información adicional</h5><p>"+d.info1+"</p>";
-                            if (d.info2 != '') h = h + "<h5>Área responsable</h5><p>"+d.info2+"</p>";
-                            if (d.info3 != '') h = h + "<h5>Más información</h5><p>"+create_links(d.info3)+"</p>";
-                            infobox.transition()
-                                    .duration(200)
-                                    .style("opacity", 1);////
-                            infobox.html(h)
-                                    .style("right", "30px")
-                                    .style("top", function(d) {
-                                        wh = $(document).height();
-                                        iwh = $('.infobox').height();
-                                        info_diff = wh - d3.event.pageY - 700;
-                                        if (iwh > info_diff) return (d3.event.layerY - (iwh - info_diff)) + "px"
-                                        else return (d3.event.layerY - 150) + "px"; //-20
-                                    });
-
-                        }
-                    })
-                    .on("mouseout", function(d) {
-                        tt.transition()
-                                .duration(500)
-                                .style("opacity", 0);
-                    });
-
-            var nodeExit = node.exit().transition()
-                    .duration(duration)
-                    .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
-                    .remove();
-
-            nodeExit.select("circle")
-                    .attr("r", 1e-6);
-
-            nodeExit.select("text")
-                    .style("fill-opacity", 1e-6);
-
-            var link = svg.selectAll("path.link")
-                    .data(links, function(d) { return d.target.id; });
-
-            link.enter().insert("path", "g")
-                    .attr("class", "link")
-                    .attr("d", function(d) {
-                        var o = {x: source.x0, y: source.y0};
-                        return diagonal({source: o, target: o});
-                    });
-
-            link.transition()
-                    .duration(duration)
-                    .attr("d", diagonal);
-
-            link.exit().transition()
-                    .duration(duration)
-                    .attr("d", function(d) {
-                        var o = {x: source.x, y: source.y};
-                        return diagonal({source: o, target: o});
-                    })
-                    .remove();
-
-            nodes.forEach(function(d) {
-                d.x0 = d.x;
-                d.y0 = d.y;
-            });
-
-        }
-
-        // Toggle children on click.
-        function click(d) {
-            if (d.children) {
-                d._children = d.children;
-                d.children = null;
-            } else {
-                d.children = d._children;
-                d._children = null;
-            }
-            update(d);
-        }
-
-    }
-
-    draw_chart("Planeación");
-
 </script>
-
-<script src="/redcompartida/static/bower_components/axios/dist/axios.min.js"></script>
 
 <script>
     Handlebars.registerHelper('format_amount', function (amount){
@@ -558,30 +289,35 @@
                     $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
+                        //$("#stg").height( $("#contract-content").height());
                     });
                     break;
                 case "tender":
                     $.get('/redcompartida/static/templates/tender.handlebars', function(html) {
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
+                        //$("#stg").height( $("#contract-content").height());
                     });
                     break;
                 case "awards":
                     $.get('/redcompartida/static/templates/awards.handlebars', function(html) {
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, award: ocds.data.releases[0].awards[0] });
+                        //$("#stg").height( $("#contract-content").height());
                     });
                     break;
                 case "contracts":
                     $.get('/redcompartida/static/templates/contracts.handlebars', function(html) {
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, contract: ocds.data.releases[0].contracts[0] });
+                        //$("#stg").height( $("#contract-content").height());
                     });
                     break;
                 case "implementation":
                     $.get('/redcompartida/static/templates/implementation.handlebars', function(html) {
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, implementation: ocds.data.releases[0].contracts[0].implementation });
+                        //$("#stg").height( $("#contract-content").height());
                     });
                     break;
             }
@@ -591,10 +327,4 @@
 
 </script>
 </body>
-<script>
-    $("ul li").on("click", function() {
-      $("ul li").removeClass("active");
-      $(this).addClass("active");
-    });
-</script>
 </html>

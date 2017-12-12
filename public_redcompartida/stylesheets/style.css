@@ -527,7 +527,7 @@ b, strong {
 #contract-sidebar .stages ul > li:last-child            { height: 27px; margin-top: 10px; line-height: 30px; }
 #contract-sidebar .stages ul > li > a                   { display: block; }
 #contract-sidebar .stages ul > li > img                 { width: 25px; position: absolute; left: -25px; top: 12.5px; }
-#contract-sidebar .stages ul > li > .hover-image        { display: none; }
+#contract-sidebar .stages ul > li > .hover-image        { display: none; cursor: pointer;}
 #contract-sidebar .stages ul > li:hover > .normal-image,
 #contract-sidebar .stages ul > li.active > .normal-image{ display: none; }
 #contract-sidebar .stages ul > li:hover > .hover-image,
@@ -547,4 +547,8 @@ b, strong {
   #contract-sidebar .stages                               { padding-bottom: 0px; margin-right: 0px; margin-left: 0px;}
   #contract-content                                       { margin-top: 10px;}
   .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {padding: 0px;}
+}
+
+.etapa{
+  cursor: pointer;
 }

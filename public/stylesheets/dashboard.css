@@ -58,41 +58,6 @@ div.google-visualization-tooltip {
     /*display: none;*/
 }
 
-/*
-.d3-tip {
-    width: 250px;
-    line-height: 1;
-    font-family: "Open Sans";
-    font-size: 11px;
-    font-color: black !important;
-    padding: 12px;
-    background: white;
-    color: black;
-    border-radius: 2px;
-}
-*/
-
-/* Creates a small triangle extender for the tooltip */
-/*
-.d3-tip:after {
-    box-sizing: border-box;
-    width: 100%;
-    line-height: 1;
-    color: white;
-    content: "\25BC";
-    position: absolute;
-    text-align: center;
-}*/
-
-/* Style northward tooltips differently */
-/*
-.d3-tip.n:after {
-    margin: -1px 0 0 0;
-    top: 100%;
-    left: 0;
-}
-*/
-
 .grid .tick {
     stroke: lightgrey;
     opacity: 0.7;
@@ -124,7 +89,7 @@ div.google-visualization-tooltip {
 .contract-item .contract-info   { width: 90%; float: left; }
 .contract-item .inner           { padding: 10px 15px; }
 .contract-item .item-footer     { background-color: #e3e3e3; -webkit-border-radius: 0 0 0 5px; -moz-border-radius: 0 0 0 5px; border-radius: 0 0 0 5px; }
-.contract-item h3               { font-weight: 700; color: #545454 /*#0c9*/; }
+.contract-item h3               { font-weight: 700; color: #545454; font-size: 22px;}
 .contract-item h4 > a           { font-size: 14px; font-weight: 600; color: #0c9/*#545454*/; }
 .contract-item h4 > a:hover     { font-size: 14px; font-weight: 600; color: #096/*#545454*/; }
 .contract-item p                { margin-bottom: 0; }
@@ -384,8 +349,7 @@ ul, ol {
 }
 
 html, body {
-    /*height: 100%;*/
-    margin: 50px 0 0;
+    margin: 47px 0 0;
     padding: 0;
     font-size: 14px;
     line-height: 1.6em;

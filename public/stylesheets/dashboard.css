@@ -191,8 +191,6 @@ and (max-device-width: 736px){
 
 }
 
-#tablaChartDonut { padding-bottom: 20px }
-
 @media (max-width: 768px) {
     #tablaChartDonut { padding-bottom: 0px }
 }

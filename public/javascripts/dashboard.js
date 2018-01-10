@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+  $.getJSON( "https://raw.githubusercontent.com/mxabierto/edca-dashboard/develop/data/fecha_actualizacion.json", function( data ) {
+    if(!data.length){
+      $("#fecha_Procemiento").empty();
+      $("#fecha_Procemiento").html(data.fecha_procedimiento_contratacion);
+      $("#fecha_Destino").empty();
+      $("#fecha_Destino").html(data.fecha_destino_contratacion);
+    }
+  });
+
     // DONUT CHARTs
     var ff= $.jqplot;
 

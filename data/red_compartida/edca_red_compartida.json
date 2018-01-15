@@ -80,6 +80,7 @@
           }
         ],
         "procuringEntity": {
+        	"id":"SCT",
           "identifier": {
             "id": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
           },
@@ -89,13 +90,19 @@
           {
             "id": "doc-d337a65c-4fc7-4154-bbdf-eb7e9846f6d7",
             "documentType": "contractAnnexe",
-            "title": "La convocatoria se publicará en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periódicos de circulación nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP.",
-            "description": "http://promtel.gob.mx/bases-int-es.zip",
+            "title": "Convocatoria",
+            "description": "La convocatoria se publicará en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periódicos de circulación nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP.",
             "url": "http://promtel.gob.mx/bases-int-es.zip"
           }
         ]
       },
-      "buyer": {},
+      "buyer": {
+      	"id":"SCT",
+          "identifier": {
+            "id": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+          },
+          "name": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+        },
       "awards": [
         {
           "id": "APP-009000896-E1-2016",

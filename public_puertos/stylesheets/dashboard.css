@@ -284,10 +284,6 @@ dgm-footer {
     margin-bottom: 0px !important;
 }
 
-.container {
-  max-width: 1100px;
-}
-
 .tabs-left>li, .tabs-right>li {
     margin-top: -3px;
 }

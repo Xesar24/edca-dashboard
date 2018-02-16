@@ -5,12 +5,9 @@
 <html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" lang="es-MX" xml:lang="es-MX">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/contratacionesabiertas/static/bower_components/font-awesome/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="/contratacionesabiertas/static/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/contratacionesabiertas/static/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
-    <!-- <link rel='stylesheet' href='/contratacionesabiertas/static/stylesheets/main.css'/> -->
+    <!-- gráfica base -->
     <link rel='stylesheet' href='<%= process.env.CDN_URL %>/assets/css/main.css' />
+    <link href="/contratacionesabiertas/static/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
     <link rel='stylesheet' href='/contratacionesabiertas/static/stylesheets/style_d3bubble.css'/>
     <link rel="stylesheet" type="text/css" href="/contratacionesabiertas/static/bower_components/jqplot/jquery.jqplot.css"/>
     <link rel="stylesheet" href="/contratacionesabiertas/static/stylesheets/dashboard.css">
@@ -51,10 +48,6 @@
 
         .progress {
             margin-bottom: 0;
-        }
-
-        .container {
-            max-width: 1100px;
         }
 
         .tooltip {
@@ -248,7 +241,7 @@
 
                         <div class="row">
                             <div class="col-sm-offset-6 col-sm-6 col-xs-12">
-                                <small>Actualización a noviembre de 2017. </small><br>
+                                <small id="fecha_Procemiento"></small><br>
                                 <small>* Incluye adhesión a licitaciónes realizadas por otras dependencias de la Administración Pública Federal.
                                   <br>
                                 ** Incluye la contratación del arquitecto maestro por $2,692,364,464.63, el cual fue adjudicado a través de un concurso al que se invitó a ocho despachos de arquitectura.
@@ -310,7 +303,7 @@
 
                         <div class="row" >
                             <div class="col-sm-offset-6 col-sm-6 col-xs-12">
-                                <small>Actualización a noviembre de 2017.</small>
+                                <small id="fecha_Destino"></small>
                             </div>
                         </div>
 

@@ -2,10 +2,14 @@ var express = require('express');
 var router = express.Router();
 var pgp = require('pg-promise')();
 
+var app = express();
+
 var edca_db;
 
 /* URL para del cdn de datos.gob.mx usado para cargar navbar y footer */
-process.env.CDN_URL = 'https://cdn.datos.gob.mx';
+app.set('env', process.env.ENV || 'development');
+app.settings.env = app.get('env');
+process.env.CDN_URL = process.env.CDN_URL || 'https://cdn.datos.gob.mx';
 
 if ( typeof process.env.EDCA_DB != "undefined" ){
     console.log("EDCA_DB: ", process.env.EDCA_DB);

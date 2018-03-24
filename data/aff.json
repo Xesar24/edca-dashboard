@@ -5,7 +5,7 @@
     "Objeto del Contrato",
     "Contratista",
     "Importe comprometido",
-    "Importe pagado al 31-10-17",
+    "Importe pagado al 30-11-17",
     "Avance físico",
     "Avance financiero"
   ],
@@ -48,9 +48,9 @@
           "Drenaje Pluvial Temporal",
           "PARTICIPACIÓN CONJUNTA: CALZADA CONSTRUCCIONES, SA DE CV Y CONSTRUCCIONES Y DRAGADOS DEL SURESTE, SA DE CV",
           "$243,253,417.07",
-          "$196,022,223.55",
-          "99.00%",
-          "81.39%"
+          "$198,977,886.50",
+          "99.85%",
+          "81.61%"
         ],
         [
           5,
@@ -89,7 +89,7 @@
           "PROYECTOS Y CONSTRUICCIONES URISA S.A. DE C.V.",
           "$1,114,845,394.31",
           "$170,792,061.44",
-          "46.60%",
+          "54.22%",
           "15.32%"
         ]
       ]
@@ -103,7 +103,7 @@
           "Pilotes de Cimentación",
           "GAMI INGENIERÍA E INSTALACIONES S.A. DE C.V.",
           "$822,363,697.05",
-          "$646,299,946.78",
+          "$743,141,211.33",
           "99.63%",
           "90.93%"
         ],
@@ -113,9 +113,9 @@
           "Losa de cimentación ETP",
           "ICA CONSTRUTORA DE INFRAESTRUCTURA S.A. DE C.V.; IMPULSORA DE DESARROLLO INTEGRAL S.A. DE C.V.; CONSTRUCCIONES Y TRITURACIONES S.A. DE C.V.; CONTROLADORA DE OPERACIONES DE INFRAESTRUCTURA S.A. DE C.V.; CONSTRUCTORA EL CAJÓN S.A. DE C.V.",
           "$7,555,647,477.04",
-          "$802,278,813.75",
-          "12.50%",
-          "10.20%"
+          "$1,112,119,123.65",
+          "19.34%",
+          "14.14%"
         ],
         [
           3,
@@ -133,9 +133,9 @@
           "Torre de control",
           "CONSTRUCCIONES ALDESEM S.A. DE C.V. ALDESA CONSTRUCCIONES S.A. JAGUAR INGENIEROS CONSTRUCTORES S.A. DE C.V.",
           "$1,242,171,349.64",
-          "$63,038,454.63",
-          "7.22%",
-          "5.02%"
+          "$67,228,193.66",
+          "9.35%",
+          "5.36%"
         ],
         [
           5,
@@ -143,9 +143,9 @@
           "Losa de cimentación CTT",
           "SACYR EPCCOR NAICM S.A.P.I. DE C.V.",
           "$1,399,983,017.99",
-          "$213,993,439.22",
-          "18.53%",
-          "14.68%"
+          "$243,549,029.24",
+          "22.98%",
+          "16.71%"
         ]
       ]
     },
@@ -158,9 +158,9 @@
           "Pista 2",
           "COCONAL S.A.P.I, CONSTRUCTORA Y PAVIMENTADORA VISE S.A. DE C.V.",
           "$7,926,299,964.90",
-          "$3,474,472,107.53",
-          "52.28%",
-          "42.53%"
+          "$3,931,803,448.52",
+          "57.11%",
+          "48.13%"
         ],
         [
           2,
@@ -168,9 +168,9 @@
           "Pista 3",
           "OPERADORA CICSA S.A. DE C.V., CONSTRUCTORA Y EDIFICADORA GIA+A S.A. DE C.V., PROMOTORA Y DESARROLLADORA MEXICANA S.A. DE C.V., LA PENINSULAR COMPAÑÍA CONSTRUCTORA S.A. DE C.V.",
           "$7,359,204,570.23",
-          "$2,289,563,701.88",
-          "31.05%",
-          "27.12%"
+          "$2,612,950,212.36",
+          "37.43%",
+          "34.22%"
         ]
       ]
     }

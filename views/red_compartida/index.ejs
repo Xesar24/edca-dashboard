@@ -186,7 +186,7 @@
 </div>
 
 
-<div id="d3Tooltip" style="opacity: 0;" class="ttip"></div>
+<!-- <div id="d3Tooltip" style="opacity: 0;" class="ttip"></div> -->
 
 <dgm-footer></dgm-footer>
 
@@ -243,11 +243,11 @@
 
 
     function getOCDS(){
-        return axios.get('https://raw.githubusercontent.com/mxabierto/edca-dashboard/master/data/red_compartida/edca_red_compartida.json')
+        return axios.get('https://raw.githubusercontent.com/mxabierto/edca-dashboard/develop/data/red_compartida/edca_red_compartida.json')
     }
 
     function getLinks(){
-        return axios.get('https://raw.githubusercontent.com/mxabierto/edca-dashboard/master/data/red_compartida/links.json')
+        return axios.get('https://raw.githubusercontent.com/mxabierto/edca-dashboard/develop/data/red_compartida/links.json')
     }
 
     axios.all([ getOCDS(), getLinks()]).then(axios.spread(function( ocds, links ){

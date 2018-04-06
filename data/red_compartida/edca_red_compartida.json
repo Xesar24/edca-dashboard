@@ -13,10 +13,11 @@
       "planning": {
         "budget": {
           "id": "15094000001",
-          "amount": {
+          "value": {
             "currency": "MXN"
           },
-          "uri": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/30274541?verify=15&oid=25211381&fileId=13721837"
+          "uri": "https://compranet.funcionpublica.gob.mx/esop/toolkit/DownloadProxy/30274541?verify=15&oid=25211381&fileId=13721837",
+          "project":"Red Compartida"
         },
         "rationale": "El desarrollo, despliegue y operación de la Red Compartida se lleva a cabo considerando que:   • El 11 de junio de 2013 se publicó en el Diario Oficial de la Federación el Decreto por el que se reforman y adicionan diversas disposiciones de los artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución Política de los Estados Unidos Mexicanos, en materia de telecomunicaciones, en cuyo artículo décimo sexto transitorio se establece que el Estado, a través del Ejecutivo Federal, en coordinación con el Instituto Federal de Telecomunicaciones, garantizará la instalación de una red pública compartida de telecomunicaciones que impulse el acceso efectivo de la población a la comunicación de banda ancha y a los servicios de telecomunicaciones.  • Que conforme a lo establecido en la misma disposición transitoria, la referida red compartida de telecomunicaciones contemplará, entre otros, el aprovechamiento de al menos 90 MHz del espectro liberado por la transición a la Televisión Digital Terrestre (banda 700 MHz) y de los recursos de la red troncal de fibra óptica de la Comisión Federal de Electricidad.  • Que el artículo décimo quinto transitorio del decreto referido en los párrafos anteriores, instruyó a la Comisión Federal de Electricidad a ceder totalmente al organismo descentralizado Telecomunicaciones de México su concesión para instalar, operar y explotar una red pública de telecomunicaciones, así como a transferirle todos los recursos y equipos necesarios para la operación y explotación de dicha concesión.  • Que con fecha 14 de julio de 2014 se publicó en el Diario Oficial de la Federación el decreto por el que se expiden la Ley Federal de Telecomunicaciones y Radiodifusión, y la Ley del Sistema Público de Radiodifusión del Estado Mexicano; y se reforman, adicionan y derogan diversas disposiciones en materia de telecomunicaciones y radiodifusión, en cuyo artículo décimo tercero transitorio se establece que el Ejecutivo Federal, a través de la Secretaría de Comunicaciones y Transportes, realizará las acciones tendientes a instalar la red pública compartida de telecomunicaciones a que se refiere el artículo Décimo Sexto transitorio del Decreto por el que se reforman y adicionan diversas disposiciones de los artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución Política de los Estados Unidos Mexicanos, en materia de telecomunicaciones, publicado en el Diario Oficial de la Federación el 11 de junio de 2013, y que en caso de que el Ejecutivo requiera de bandas de frecuencias del espectro liberado por la transición a la televisión digital terrestre (banda de 700 MHz) para crecer y fortalecer la red compartida, el Instituto Federal de Telecomunicaciones las otorgará directamente, siempre y cuando dicha red se mantenga bajo el control de una entidad o dependencia pública o bajo un esquema de asociación público-privada.  • Que el artículo 142 de la Ley Federal de Telecomunicaciones y Radiodifusión, establece que el Instituto Federal de Telecomunicaciones asignará directamente 90 MHz de la banda de 700 MHz para la operación y explotación de una red compartida mayorista, mediante concesión de uso comercial, en los términos establecidos en dicha ley.  • Que el Plan Nacional de Desarrollo 2013-2018 plantea como uno de sus objetivos la democratización del acceso a los servicios de telecomunicaciones, fijando para tales efectos, como líneas de acción entre otras, la promoción de mayor oferta de los servicios de telecomunicaciones, la inversión privada en el sector; fomentar el uso óptimo, entre otras, de la banda de 700 MHz bajo principios de acceso universal, no discriminatorio, compartido y continuo; y la promoción de participaciones público-privadas en el despliegue, desarrollo y uso eficiente de la infraestructura de conectividad en el país.  • Que el Programa Sectorial de Comunicaciones y Transportes 2013-2018 establece, como uno de sus objetivos, ampliar la cobertura y el acceso a mejores servicios de comunicaciones, en condiciones de competencia, y para ello estableció como estrategia promover el desarrollo de nueva infraestructura en comunicaciones, así como su uso óptimo, para mejorar su cobertura, conectividad y accesibilidad, fijando como líneas de acción, entre otras, promover la creación de una red compartida de acceso inalámbrico al mayoreo que aproveche la banda de 700 MHz, así como promover asociaciones público-privadas en el despliegue, desarrollo y uso eficiente de la infraestructura de conectividad, expandir y operar la red troncal prevista en la reforma constitucional en materia de telecomunicaciones para ofrecer mayor cobertura, entre otras.",
         "documents": [
@@ -80,6 +81,7 @@
           }
         ],
         "procuringEntity": {
+        	"id":"SCT",
           "identifier": {
             "id": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
           },
@@ -89,13 +91,19 @@
           {
             "id": "doc-d337a65c-4fc7-4154-bbdf-eb7e9846f6d7",
             "documentType": "contractAnnexe",
-            "title": "La convocatoria se publicará en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periódicos de circulación nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP.",
-            "description": "http://promtel.gob.mx/bases-int-es.zip",
+            "title": "Convocatoria",
+            "description": "La convocatoria se publicará en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periódicos de circulación nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP.",
             "url": "http://promtel.gob.mx/bases-int-es.zip"
           }
         ]
       },
-      "buyer": {},
+      "buyer": {
+      	"id":"SCT",
+          "identifier": {
+            "id": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+          },
+          "name": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+        },
       "awards": [
         {
           "id": "APP-009000896-E1-2016",

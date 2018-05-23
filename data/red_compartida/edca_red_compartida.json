@@ -13,7 +13,9 @@
     "planning": {
       "budget": {
         "id": "15094000001",
+        "description": "No aplica, por tratarse de una Asociación Público-Privada (APP) autofinanciada, la cual es definida como un proyecto cuyos recursos para su desarrollo y ejecución provienen en su totalidad de aportaciones distintas a numerario (Artículo 3, inciso c del Reglamento de la Ley Federal de APP) este proyecto no cuenta con una fuente de recursos presupuestaria.",
         "amount": {
+          "amount": 0,
           "currency": "MXN"
         },
         "uri": "http://promtel.gob.mx/Compranet/Contrato-Version-Publica.pdf.zip"
@@ -22,14 +24,14 @@
       "documents": [{
         "id": "doc-8d60ce9a-bf01-4f2c-9dea-1b276675f992",
         "documentType": "contractAnnexe",
-        "title": "http://promtel.gob.mx/Anexos-contrato.zip",
-        "description": "http://promtel.gob.mx/Anexos-contrato.zip",
-        "url": "http://promtel.gob.mx/Anexos-contrato.zip"
+        "title": "Planeación Red Compartida",
+        "description": "La Red Compartida es un proyecto encabezado por la Secretaría de Comunicaciones y Transportes (SCT) del Gobierno de la República, en coordinación con el Instituto Federal de Telecomunicaciones (IFT).Su desarrollo contempla que una compañía o un consorcio privado participe en el diseño, financiamiento, despliegue, operación y comercialización de sus servicios. De acuerdo con la nueva Ley Federal de Telecomunicaciones y Radiodifusión la Red Compartida podrá contar hasta con 100% de inversión extranjera directa.",
+        "url": "https://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=14"
       }]
     },
     "tender": {
       "id": "APP-009000896-E1-2016",
-      "title": "BASES DEL CONCURSO INTERNACIONAL NÚMERO 01/2016 PARA LA ADJUDICACIÓN DE UN PROYECTO DE ASOCIACIÓN PÚBLICO-PRIVADA CONFORME A LA LEY DE ASOCIACIONES PÚBLICO PRIVADAS, PARA LA INSTALACIÓN Y OPERACIÓN DE LA RED PÚBLICA COMPARTIDA DE TELECOMUNICACIONES (BASES DEL CONCURSO DE LA RED COMPARTIDA) Y CONTRATO DE ASOCIACIÓN PÚBLICO-PRIVADA QUE CELEBRAN EL ORGANISMO PROMOTOR DE INVERSIONES EN TELECOMUNICACIONES Y TELECOMUNICACIONES DE MÉXICO, CON LA SOCIEDAD CON PROPÓSITO ESPECÍFICO GANADORA DEL CONCURSO INTERNACIONAL (CONTRATO DE LA RED COMPARTIDA)",
+      "title": "Por tratarse de una Asociación Público-Privada (APP) autofinanciada, la cual es definida como un proyecto cuyos recursos para su desarrollo y ejecución provienen en su totalidad de aportaciones distintas a numerario (Artículo 3, inciso c del Reglamento de la Ley Federal de APP) este proyecto no cuenta con una fuente de recursos presupuestaria.",
       "description": "Asociación público-privada (APP) para el diseño, instalación, despliegue, operación, mantenimiento y actualización de una red de servicios de telecomunicaciones móviles. La aportación pública serán los 90MHz en la banda de 700 MHz y un par de hilos de fibra óptica de la Red Troncal, mientras que el diseño, financiamiento, despliegue, operación, comercialización y mantenimiento de la red correrá a cargo del particular. La red será mayorista, es decir, comercializará todos sus servicios y capacidades a otros concesionarios y comercializadoras sin discriminación.",
       "status": "complete",
       "items": [{
@@ -49,9 +51,11 @@
         }
       }],
       "minValue": {
+        "amount": 0,
         "currency": "MXN"
       },
       "value": {
+        "amount": 0,
         "currency": "MXN"
       },
       "procurementMethod": "open",
@@ -83,18 +87,19 @@
       "documents": [{
         "id": "doc-d337a65c-4fc7-4154-bbdf-eb7e9846f6d7",
         "documentType": "contractAnnexe",
-        "title": "La convocatoria se publicará en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periodicos de circulacion nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP.",
-        "description": "http://promtel.gob.mx/bases-int-es.zip",
+        "title": "Licitación de la Red Compartida",
+        "description": "La convocatoria se publicó en el Diario Oficial de la Federación, en la pagina web de la SCT, en Compranet y en dos periodicos de circulación nacional de conformidad con los artículos 44 de la Ley de APP y 66 del Reglamento de la Ley de APP en el 29 de enero del 2016",
         "url": "http://promtel.gob.mx/bases-int-es.zip"
       }]
     },
     "buyer": {},
     "awards": [{
       "id": "APP-009000896-E1-2016",
-      "title": "ADJUDICACION DE UN PROYECTO DE ASOCIACION PUBLICO-PRIVADA CONFORME A LA LEY DE ASOCIACIONES PÚBLICO PRIVADAS, PARA LA INSTALACIÓN Y OPERACIÓN DE LA RED PÚBLICA COMPARTIDA DE TELECOMUNICACIONES A QUE SE REFIERE EL ARTICULO DÉCIMO SEXTO TRANSITORIO DEL DECRETO POR EL QUE SE REFORMAN Y ADICIONAN DIVERSAS DISPOSICIONES DE LOS ARTÍCULOS 6°., 7°., 27, 28, 73, 78, 94 Y 105 DE LA CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS MEXICANOS, EN MATERIA DE TELECOMUNICACIONES, PUBLICADO EN EL DIARIO OFICIAL DE LA FEDERACIÓN EL 11 DE JUNIO DE 2013, CONTEMPLANDO EL APROVECHAMIENTO DE LA BANDA DE FRECUENCIAS DEL ESPECTRO QUE INCLUYE LOS SEGMENTOS DE 703 A 748 MHZ Y DE 758 A 803 MHZ, CON UN TOTAL DE 90 MHZ BAJO LA FIGURA DE ARRENDAMIENTO Y DE UN PAR DE HILOS DE FIBRA ÓPTICA DE LA RED TRONCAL REFERIDA EN EL ARTÍCULO DÉCIMO QUINTO TRANSITORIO DEL MISMO DECRETO.",
+      "title": "ADJUDICACION DE UN PROYECTO DE ASOCIACION PUBLICO-PRIVADA CONFORME A LA LEY DE ASOCIACIONES PÚBLICO PRIVADAS, PARA LA INSTALACIÓN Y OPERACIÓN DE LA RED PÚBLICA COMPARTIDA DE TELECOMUNICACIONES.",
       "description": "En la Ciudad de México, siendo las 10:00 horas del 17 de noviembre de 2016, se reunieron en el auditorio de la Secretaría de Comunicaciones y Transportes, ubicado en el Centro Nacional SCT, Cuerpo C, Avenida Universidad y Xola S/N, Colonia Narvarte, Delegación Benito Juárez, Ciudad de México, C.P. 03020, los servidores públicos y demás personas cuyos nombres y firmas aparecen al final de la presente Acta, así como los representantes de los Concursantes enlistados en la relación que se agrega como Anexo \"A\" de la presente Acta, y los observadores cuyos nombres se detalla en la relación que se agrega como Anexo \"B\" de la presente Acta, con objeto de llevar a cabo la JUNTA PÚBLICA EN LA QUE SE DIO A CONOCER Y SE NOTIFICÓ EL RESULTADO DE LA EVALUACIÓN DE LA OFERTA ECONÓMICA DEL CONCURSANTE CONSORCIO ALTAN Y SE NOTIFICÓ EL FALLO del Concurso Internacional No. APP-009000896-E1-2016 (el Concurso).",
       "date": "2016-11-17T06:00:00.000Z",
       "value": {
+        "amount": 0,
         "currency": "MXN"
       },
       "suppliers": [{
@@ -103,11 +108,11 @@
           "id": "ARE161205BX8",
           "uri": "http://www.altanredes.com"
         },
-        "name": "ARE161205BX8"
+        "name": "ALTAN REDES SAPI DE CV"
       }],
       "items": [{
         "id": "item-36d53fa5-bb41-4209-b141-c47f078e5adb",
-        "description": "Clave CUCOP del bien o servicio adjudicado: 31600001",
+        "description": "Adjudicación del Contrato de Asociación Público-Privada",
         "classification": {
           "scheme": "Servicio de telecomunicaciones",
           "id": "31602",
@@ -124,9 +129,10 @@
       "documents": [{
         "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b55",
         "documentType": "contractAnnexe",
-        "title": "SCT",
-        "description": "SCT",
-        "url": "http://promtel.gob.mx/Compranet/Contrato-Version-Publica.pdf.zip"
+        "title": "Adjudicación de Contrato APP",
+        "description": "Proceso de adjudicación y actas de un proyecto de Asociación Público-Privada conforme a la Ley de Asociaciones Público Privadas, para la instalación y operación de la Red Pública Compartida de Telecomunicaciones.",
+        "url": "https://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=14",
+        "url": "http://promtel.gob.mx/Compranet/ACTAS-ENTIDAD-CONVOCANTE.zip"
       }]
     }],
     "contracts": [{
@@ -140,6 +146,7 @@
         "endDate": "2017-01-24T06:00:00.000Z"
       },
       "value": {
+        "amount": 0,
         "currency": "MXN"
       },
       "items": [{
@@ -162,26 +169,44 @@
       "documents": [{
         "id": "doc-667c9a11-0e41-4b3a-84f0-e5e8dc39329d",
         "documentType": "contractAnnexe",
-        "title": "http://promtel.gob.mx/Compranet/Contrato-Version-Publica.pdf.zip",
-        "description": "http://promtel.gob.mx/Compranet/Contrato-Version-Publica.pdf.zip",
+        "title": "Contrato Asociación Publico-Privada y Anexos",
+        "description": "Contrato, Clausulas del Contrato y Anexos del Contrato",
+        "url": "http://promtel.gob.mx/Compranet/Contrato-Version-Publica.pdf.zip",
         "url": "http://promtel.gob.mx/Anexos-contrato.zip"
       }],
       "implementation": {
 
-        "description": "Cobertura de al menos 30.0% (Treinta por ciento) de la Población Agregada a nivel nacional a más tardar el 31 de marzo del año 2018, que deberá incluir al menos un cuarto de la totalidad de los pueblos mágicos, definidos por la Secretaría de Turismo hasta 30 (treinta) días naturales antes de la fecha de presentación de la Oferta.",
+        "milestones": [{
+          "description": "El desarrollo del proyecto de la Red Compartida tiene un Calendario de Despliegue compuesto por 6 hitos de cobertura, con los cuales debe irse cubriendo a la población de manera incremental hasta alcanzar el 92.2% y 111 pueblos mágicos de México.",
+          "dueDate": "2024-01-24T12:00:00Z",
+          "status": "scheduled",
+          "id": "0001",
 
-        "dueDate": "2018-03-21T12:00:00Z",
+          "title": "Cumplimiento de los hitos de cobertura"
+        }],
+        "transactions": [{
+          "id": "0001",
+          "value": {
+            "amount": 0,
+            "currency": "MXN"
+          }
 
-        "id": "0001",
-
-        "title": "Hito de Cobertura del 30%",
+        }],
         "documents": [{
-          "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b55",
-          "documentType": "contractAnnexe",
-          "title": "Resolución de Cobertura",
-          "description": "Resolución con respecto a la cobertura de al menos 30% (Treinta por ciento de la Población Agregada a nivel nacional a más tardar el 31 de marzo del año 2018, que deberá incluir almenos un cuarto de la totalidad de los pueblos mágicos, definidos por la Secretaría de Turismo",
-          "url": "http://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=190"
-        }]
+            "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b56",
+            "documentType": "contractAnnexe",
+            "title": "Despliegue de Cobertura",
+            "description": "La Red Compartida ofrece un servicio mayorista de telecomunicaciones en el país utilizando la banda de 700 MHz y se desarrolla de acuerdo al cumplimiento de hitos de cobertura establecidos en un Contrato de Asociación Público Privada. PROMTEL da seguimiento continuo al avance del proyecto a través de acciones de Supervisión y de la evaluación del cumplimiento del Contrato APP",
+            "url": "http://promtel.gob.mx/paginainicio/redcompartida/#/proyecto/"
+          },
+          {
+            "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b57",
+            "documentType": "contractAnnexe",
+            "title": "Resolución de Cobertura al 30%",
+            "description": "Resolución con respecto a la cobertura de al menos 30% (Treinta por ciento de la Población Agregada a nivel nacional a más tardar el 31 de marzo del año 2018, que deberá incluir almenos un cuarto de la totalidad de los pueblos mágicos, definidos por la Secretaría de Turismo",
+            "url": "http://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=190"
+          }
+        ]
 
       }
     }],

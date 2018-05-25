@@ -52,7 +52,7 @@
                 {{else}}
                     <p>
                         <strong>
-                            En proceso
+                            No aplica
                         </strong>
                     </p>
                 {{/if}}
@@ -104,7 +104,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/implementation.documents}}
                 {{else}}

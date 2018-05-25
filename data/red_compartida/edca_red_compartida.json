@@ -139,7 +139,7 @@
       "id": "APP-009000896-E1-2016",
       "awardID": "APP-009000896-E1-2016",
       "title": "CONTRATO DE ASOCIACIÓN PÚBLICO-PRIVADA QUE CELEBRAN EL ORGANISMO PROMOTOR DE INVERSIONES EN TELECOMUNICACIONES, REPRESENTADO POR SU DIRECTOR GENERAL, LUIS FERNANDO BORJÓN FIGUEROA (EN LO SUCESIVO EL \"ORGANISMO\") Y TELECOMUNICACIONES DE MÉXICO, REPRESENTADO POR SU DIRECTOR GENERAL, JORGE ALBERTO JURAIDINI RUMILLA (EN LO SUCESIVO \"TELECOMM\") CON LA SOCIEDAD CON PROPÓSITO ESPECÍFICO DENOMINADA \"AL TÁN REDES\", S.A.P.I. DE C.V., REPRESENTADA POR EUGENIO GALDÓN BRUGAROLAS (EN LO SUCESIVO EL \"DESARROLLADOR\" Y, CONJUNTAMENTE CON EL ORGANISMO Y CON TELECOMM, LAS \"PARTES\")",
-      "description": "El objeto de este Contrato es establecer el esquema, los términos y las condiCiones de la asociación público privada bajo las cuales el Desarrollador deberá diseñar, instalar, desplegar, operar, mantener y actualizar la Red Compartida, contemplando el aprovechamiento de la banda de frecuencias qel espectro que incluye los segmentos de 703 a 748 MHz y de 758 a 803 MHz, con un total de 90 MHz bajo la figura de arrendamiento y, en su caso, aprovechar un par de hilos de fibra óptica de la Red Troncal y comercializar el Servicio Mayorista de Telecomunicaciones a través de la misma, a fin de que el Estado mediante la asociación público privada formada en el presente Contrato dé cumplimiento a lo establecido en el artículo transitorio décimo sexto del Decreto de Reforma Constitucional.",
+      "description": "El objeto de este Contrato es establecer el esquema, los términos y las condiciones de la asociación público privada bajo las cuales el Desarrollador deberá diseñar, instalar, desplegar, operar, mantener y actualizar la Red Compartida, contemplando el aprovechamiento de la banda de frecuencias qel espectro que incluye los segmentos de 703 a 748 MHz y de 758 a 803 MHz, con un total de 90 MHz bajo la figura de arrendamiento y, en su caso, aprovechar un par de hilos de fibra óptica de la Red Troncal y comercializar el Servicio Mayorista de Telecomunicaciones a través de la misma, a fin de que el Estado mediante la asociación público privada formada en el presente Contrato dé cumplimiento a lo establecido en el artículo transitorio décimo sexto del Decreto de Reforma Constitucional.",
       "status": "active",
       "period": {
         "startDate": "2017-01-24T06:00:00.000Z",
@@ -202,9 +202,23 @@
           {
             "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b57",
             "documentType": "contractAnnexe",
+            "title": "Inicio de operaciones comerciales",
+            "description": "La Red Compartida al ejecutarse bajo una asociación público-privada debe contar con la autorización de PROMTEL para el inicio de operaciones comerciales. En ese sentido, al haber sido cubiertos los requisitos de procedencia por parte de Altán Redes para ese fin, el 15 de marzo de 2018 fue otorgada dicha autorización.",
+            "url": "https://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=190"
+          },
+          {
+            "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b58",
+            "documentType": "contractAnnexe",
             "title": "Resolución de Cobertura al 30%",
             "description": "Resolución con respecto a la cobertura de al menos 30% (Treinta por ciento de la Población Agregada a nivel nacional a más tardar el 31 de marzo del año 2018, que deberá incluir almenos un cuarto de la totalidad de los pueblos mágicos, definidos por la Secretaría de Turismo",
             "url": "http://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=190"
+          },
+          {
+            "id": "doc-4074abc5-22e2-40c0-b7d0-f6fc205f6b59",
+            "documentType": "contractAnnexe",
+            "title": "Visualizador Geográfico",
+            "description": " En esta sección se pone a disposición del público a través de un Visualizador Geográfico, los mapas de cobertura de la Red Compartida que muestran el avance de cobertura del proyecto. El Visualizador es un producto del trabajo derivado del Convenio de colaboración entre PROMTEL y la Universidad Nacional Autónoma de México.",
+            "url": "https://promtel.gob.mx/paginainicio/redcompartida/proyecto/?page_id=149"
           }
         ]
 

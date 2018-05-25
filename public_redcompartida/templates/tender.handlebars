@@ -23,7 +23,7 @@
             <p><strong>{{format_amount ocds.tender.value.amount }}</strong></p>
         {{else}}
             <p>
-                <strong>En proceso</strong>
+                <strong>No aplica</strong>
             </p>
         {{/if}}
 
@@ -112,7 +112,7 @@
                     {{/ocds.tender.milestones }}
                 {{else}}
                     <p>
-                        <strong>En proceso</strong>
+                        <strong>No aplica</strong>
                     </p>
                 {{/if}}
 
@@ -122,7 +122,7 @@
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingThree">
             <h4 class="panel-title">
-                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                    
+                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Documentos
                 </a>
             </h4>
@@ -135,7 +135,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/ocds.tender.documents}}
                 {{else}}

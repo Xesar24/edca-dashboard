@@ -23,7 +23,7 @@
             <p><strong>{{format_amount ocds.planning.budget.value.amount}}</strong></p>
         {{else}}
             <p>
-                <strong>En proceso</strong>
+                <strong>No aplica</strong>
             </p>
         {{/if}}
     </div>
@@ -79,7 +79,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/ocds.planning.documents}}
                 {{else}}

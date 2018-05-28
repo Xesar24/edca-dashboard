@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Etapa</p>
-        <p><strong>Planeación</strong></p>
+        <p class="semi-bold">Planeación</p>
     </div>
     <div class="col-md-3">
         <p class="small">Identificador de presupuesto</p>
@@ -9,7 +9,11 @@
     </div>
     <div class="col-md-3">
         <p class="small">Tipo</p>
-        <p class="semi-bold"> {{ ocds.tender.procurementMethod}} </p>
+        {{#ifCond ocds.tender.procurementMethod 'open'}}
+            <p class="semi-bold">Abierto</p>
+        {{else}}
+            <p class="semi-bold"> {{ ocds.tender.procurementMethod}} </p>
+        {{/ifCond}}
     </div>
     <div class="col-md-3">
         <p class="small">Descripción</p>
@@ -20,11 +24,9 @@
     <div class="col-md-3">
         <p class="small">Monto</p>
         {{#if ocds.planning.budget.value.amount}}
-            <p><strong>{{format_amount ocds.planning.budget.value.amount}}</strong></p>
+            <p>{{format_amount ocds.planning.budget.value.amount}}</p>
         {{else}}
-            <p>
-                <strong>No aplica</strong>
-            </p>
+            <p class="semi-bold">No aplica</p>
         {{/if}}
     </div>
     <div class="col-md-3">

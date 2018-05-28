@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-12">
         <p class="small">Etapa</p>
-        <p><strong>Implementación</strong></p>
+        <p class="semi-bold">Implementación</p>
     </div>
 </div>
 <div class="row contract-stats">
@@ -42,11 +42,15 @@
                     {{#implementation.milestones }}
                         <strong> {{title}} </strong>
                         <ul>
-                            <li>{{id}}</li>
-                            <li>{{description}} </li>
-                            <li>{{dueDate}} </li>
-                            <li>{{dateModified}} </li>
-                            <li>{{status}} </li>
+                            <!-- <li>{{id}}</li> -->
+                            <li>Descripción: {{description}} </li>
+                            <li>Fecha de vencimiento: {{dueDate}} </li>
+                            <!-- <li>{{dateModified}} </li> -->
+                            {{#ifCond status 'scheduled'}}
+                                <li>Estado: Programado</li>
+                            {{else}}
+                                <li>Estado: {{status}}</li>
+                            {{/ifCond}}
                         </ul>
                     {{/implementation.milestones }}
                 {{else}}
@@ -72,7 +76,7 @@
 
                 {{#if implementation.transactions}}
                     {{#implementation.transactions}}
-                        <strong> Transacción {{id}} </strong>
+                        <!-- <strong> Transacción {{id}} </strong> -->
                         <ul>
                             <li>Origen: {{source}}</li>
                             <li>Fecha de implementación: {{ date }}</li>

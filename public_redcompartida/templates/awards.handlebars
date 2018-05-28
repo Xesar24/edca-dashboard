@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Etapa</p>
-        <p><strong>Adjudicación</strong></p>
+        <p class="semi-bold">Adjudicación</p>
     </div>
     <div class="col-md-3">
         <p class="small">Identificador</p>
@@ -27,13 +27,13 @@
 
     <div class="col-md-3">
         <p class="small">Monto</p>
-        <p><strong>
+        <p class="semi-bold">
             {{#if award.value.amount}}
                 {{format_amount award.value.amount }}
             {{else}}
                 No aplica
             {{/if}}
-        </strong></p>
+        </p>
         <p class="small">Moneda </p>
         <p class="semi-bold">{{ award.value.currency }}</p>
     </div>

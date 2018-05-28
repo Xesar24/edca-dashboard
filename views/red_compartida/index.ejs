@@ -258,6 +258,12 @@
         $("#contract_title").text(title);
 
         $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
+          Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+            if(v1 === v2) {
+              return options.fn(this);
+            }
+            return options.inverse(this);
+          });
             var template = Handlebars.compile(html);
             document.getElementById('target').innerHTML = template({title: title, ocds: ocds.data.releases[0], links: links.data });
         });
@@ -272,6 +278,12 @@
             switch (stage){
                 case "planning":
                     $.get('/redcompartida/static/templates/planning.handlebars', function(html) {
+                        Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+                          if(v1 === v2) {
+                            return options.fn(this);
+                          }
+                          return options.inverse(this);
+                        });
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data });
                         //$("#stg").height( $("#contract-content").height());
@@ -299,6 +311,12 @@
                     });
                     break;
                 case "implementation":
+                Handlebars.registerHelper('ifCond', function(v1, v2, options) {
+                  if(v1 === v2) {
+                    return options.fn(this);
+                  }
+                  return options.inverse(this);
+                });
                     $.get('/redcompartida/static/templates/implementation.handlebars', function(html) {
                         var template = Handlebars.compile(html);
                         document.getElementById('target').innerHTML = template({ocds: ocds.data.releases[0], links: links.data, implementation: ocds.data.releases[0].contracts[0].implementation });

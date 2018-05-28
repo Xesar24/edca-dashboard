@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Etapa</p>
-        <p><strong>Licitación</strong></p>
+        <p class="semi-bold">Licitación</p>
     </div>
     <div class="col-md-3">
         <p class="small">Identificador</p>
@@ -20,10 +20,10 @@
     <div class="col-md-3">
         <p class="small">Monto</p>
         {{#if ocds.tender.value.amount}}
-            <p><strong>{{format_amount ocds.tender.value.amount }}</strong></p>
+            <p class="semi-bold"><strong>{{format_amount ocds.tender.value.amount }}</strong></p>
         {{else}}
-            <p>
-                <strong>No aplica</strong>
+            <p class="semi-bold">
+              No aplica
             </p>
         {{/if}}
 

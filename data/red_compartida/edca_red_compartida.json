@@ -13,7 +13,7 @@
     "planning": {
       "budget": {
         "id": "15094000001",
-        "description": "No aplica, por tratarse de una Asociación Público-Privada (APP) autofinanciada, la cual es definida como un proyecto cuyos recursos para su desarrollo y ejecución provienen en su totalidad de aportaciones distintas a numerario (Artículo 3, inciso c del Reglamento de la Ley Federal de APP) este proyecto no cuenta con una fuente de recursos presupuestaria.",
+        "description": "El desarrollo, despliegue y operación de la Red Compartida se lleva a cabo considerando que:   • El 11 de junio de 2013 se publicó en el Diario Oficial de la Federación el Decreto por el que se reforman y adicionan diversas disposiciones de los artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución Política de los Estados Unidos Mexicanos, en materia de telecomunicaciones, en cuyo artículo décimo sexto transitorio se establece que el Estado, a través del Ejecutivo Federal, en coordinación con el Instituto Federal de Telecomunicaciones, garantizará la instalación de una red pública compartida de telecomunicaciones que impulse el acceso efectivo de la población a la comunicación de banda ancha y a los servicios de telecomunicaciones.  • Que conforme a lo establecido en la misma disposición transitoria, la referida red compartida de telecomunicaciones contemplará, entre otros, el aprovechamiento de al menos 90 MHz del espectro liberado por la transición a la Televisión Digital Terrestre (banda 700 MHz) y de los recursos de la red troncal de fibra óptica de la Comisión Federal de Electricidad.  • Que el artículo décimo quinto transitorio del decreto referido en los párrafos anteriores, instruyó a la Comisión Federal de Electricidad a ceder totalmente al organismo descentralizado Telecomunicaciones de México su concesión para instalar, operar y explotar una red pública de telecomunicaciones, así como a transferirle todos los recursos y equipos necesarios para la operación y explotación de dicha concesión.  • Que con fecha 14 de julio de 2014 se publicó en el Diario Oficial de la Federación el decreto por el que se expiden la Ley Federal de Telecomunicaciones y Radiodifusión, y la Ley del Sistema Público de Radiodifusión del Estado Mexicano; y se reforman, adicionan y derogan diversas disposiciones en materia de telecomunicaciones y radiodifusión, en cuyo artículo décimo tercero transitorio se establece que el Ejecutivo Federal, a través de la Secretaría de Comunicaciones y Transportes, realizará las acciones tendientes a instalar la red pública compartida de telecomunicaciones a que se refiere el artículo Décimo Sexto transitorio del Decreto por el que se reforman y adicionan diversas disposiciones de los artículos 6o., 7o., 27, 28, 73, 78, 94 y 105 de la Constitución Política de los Estados Unidos Mexicanos, en materia de telecomunicaciones, publicado en el Diario Oficial de la Federación el 11 de junio de 2013, y que en caso de que el Ejecutivo requiera de bandas de frecuencias del espectro liberado por la transición a la televisión digital terrestre (banda de 700 MHz) para crecer y fortalecer la red compartida, el Instituto Federal de Telecomunicaciones las otorgará directamente, siempre y cuando dicha red se mantenga bajo el control de una entidad o dependencia pública o bajo un esquema de asociación público-privada.  • Que el artículo 142 de la Ley Federal de Telecomunicaciones y Radiodifusión, establece que el Instituto Federal de Telecomunicaciones asignará directamente 90 MHz de la banda de 700 MHz para la operación y explotación de una red compartida mayorista, mediante concesión de uso comercial, en los términos establecidos en dicha ley.  • Que el Plan Nacional de Desarrollo 2013-2018 plantea como uno de sus objetivos la democratización del acceso a los servicios de telecomunicaciones, fijando para tales efectos, como líneas de acción entre otras, la promoción de mayor oferta de los servicios de telecomunicaciones, la inversión privada en el sector; fomentar el uso óptimo, entre otras, de la banda de 700 MHz bajo principios de acceso universal, no discriminatorio, compartido y continuo; y la promoción de participaciones público-privadas en el despliegue, desarrollo y uso eficiente de la infraestructura de conectividad en el país.  • Que el Programa Sectorial de Comunicaciones y Transportes 2013-2018 establece, como uno de sus objetivos, ampliar la cobertura y el acceso a mejores servicios de comunicaciones, en condiciones de competencia, y para ello estableció como estrategia promover el desarrollo de nueva infraestructura en comunicaciones, así como su uso óptimo, para mejorar su cobertura, conectividad y accesibilidad, fijando como líneas de acción, entre otras, promover la creación de una red compartida de acceso inalámbrico al mayoreo que aproveche la banda de 700 MHz, así como promover asociaciones público-privadas en el despliegue, desarrollo y uso eficiente de la infraestructura de conectividad, expandir y operar la red troncal prevista en la reforma constitucional en materia de telecomunicaciones para ofrecer mayor cobertura, entre otras.",
         "amount": {
           "amount": 0,
           "currency": "MXN"
@@ -84,6 +84,7 @@
         },
         "name": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
       },
+      "status": "complete",
       "documents": [{
         "id": "doc-d337a65c-4fc7-4154-bbdf-eb7e9846f6d7",
         "documentType": "contractAnnexe",
@@ -92,7 +93,12 @@
         "url": "http://promtel.gob.mx/bases-int-es.zip"
       }]
     },
-    "buyer": {},
+    "buyer": {
+      "identifier": {
+        "id": "SCT"
+      },
+      "name": "SECRETARÍA DE COMUNICACIONES Y TRANSPORTES (SCT)"
+    },
     "awards": [{
       "id": "APP-009000896-E1-2016",
       "title": "ADJUDICACION DE UN PROYECTO DE ASOCIACION PUBLICO-PRIVADA CONFORME A LA LEY DE ASOCIACIONES PÚBLICO PRIVADAS, PARA LA INSTALACIÓN Y OPERACIÓN DE LA RED PÚBLICA COMPARTIDA DE TELECOMUNICACIONES.",
@@ -110,8 +116,9 @@
         },
         "name": "ALTAN REDES SAPI DE CV"
       }],
+      "status": "complete",
       "items": [{
-        "id": "item-36d53fa5-bb41-4209-b141-c47f078e5adb",
+        "id": "APP-009000896-E1-2016",
         "description": "Adjudicación del Contrato de Asociación Público-Privada",
         "classification": {
           "scheme": "Servicio de telecomunicaciones",
@@ -149,13 +156,14 @@
         "amount": 0,
         "currency": "MXN"
       },
+      "status": "complete",
       "items": [{
-        "id": "item-c841a5b0-6c4b-414f-b99a-d6014d313e8f",
-        "description": "Clave CUCOP del bien o servicio contratado: 31600001",
+        "id": "APP-009000896-E1-2016",
+        "description": "Contrato de Asociación Público-Privada",
         "classification": {
           "scheme": "Servicio de telecomunicaciones",
-          "id": "31602",
-          "description": "Clave CUCOP del bien o servicio contratado: 31600001"
+          "id": "APP-009000896-E1-2016",
+          "description": "Contrato de Asociación Público-Privada"
         },
         "quantity": 1,
         "unit": {
@@ -177,13 +185,49 @@
       "implementation": {
 
         "milestones": [{
-          "description": "El desarrollo del proyecto de la Red Compartida tiene un Calendario de Despliegue compuesto por 6 hitos de cobertura, con los cuales debe irse cubriendo a la población de manera incremental hasta alcanzar el 92.2% y 111 pueblos mágicos de México.",
-          "dueDate": "2024-01-24T12:00:00Z",
-          "status": "scheduled",
-          "id": "0001",
+            "description": "Cobertura de al menos 30.0% (Treinta por ciento) de la Población Agregada a nivel nacional al 21 de marzo del año 2018.",
+            "dueDate": "2018-03-21T12:00:00Z",
+            "status": "met",
+            "id": "HITO 30%",
+            "title": "Cumplimiento del hito del 30%"
+          },
+          {
+            "description": "Cobertura de al menos 50.0% (Cincuenta por ciento) de la Población Agregada a nivel nacional paea el tercer aniversario de la celebración del Contrato APP.",
+            "dueDate": "2020-01-24T12:00:00Z",
+            "status": "scheduled",
+            "id": "HITO 50%",
+            "title": "Cumplimiento del hito del 50%"
+          },
+          {
+            "description": "Cobertura de al menos 70.0% (Setenta por ciento) de la Población Agregada a nivel nacional para el cuarto aniversario de la celebración del Contrato APP.",
+            "dueDate": "2021-01-24T12:00:00Z",
+            "status": "scheduled",
+            "id": "HITO 70%",
+            "title": "Cumplimiento del hito del 70%"
+          },
+          {
+            "description": "Cobertura de al menos 85.0% (Ochenta y cinco por ciento) de la Población Agregada a nivel nacional para el quinto aniversario de la celebración del Contrato APP.",
+            "dueDate": "2022-01-24T12:00:00Z",
+            "status": "scheduled",
+            "id": "HITO 85%",
+            "title": "Cumplimiento del hito del 85%"
+          },
+          {
+            "description": "Cobertura de al menos 88.6% (Ochenta y ocho punto seis por ciento) de la Población Agregada a nivel nacional para el sexto aniversario de la celebración del Contrato APP.",
+            "dueDate": "2023-01-24T12:00:00Z",
+            "status": "scheduled",
+            "id": "HITO 88.6%",
+            "title": "Cumplimiento del hito del 88.6%"
+          },
+          {
+            "description": "Cobertura de al menos 92.2% (Noventa y dos punto dos por ciento) de la Población Agregada a nivel nacional para el séptimo aniversario de la celebración del Contrato APP.",
+            "dueDate": "2024-01-24T12:00:00Z",
+            "status": "scheduled",
+            "id": "HITO 92.2%",
+            "title": "Cumplimiento del hito del 92.2%"
+          }
 
-          "title": "Cumplimiento de los hitos de cobertura"
-        }],
+        ],
         "transactions": [{
           "id": "0001",
           "value": {

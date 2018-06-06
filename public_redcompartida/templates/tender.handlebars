@@ -14,8 +14,8 @@
 </div>
 <div class="row contract-stats">
     <div class="col-md-3">
-        <p class="small">Tipo</p>
-        <p class="semi-bold"> {{ ocds.tender.procurementmethod }} </p>
+        <p class="small">Estado</p>
+        <p class="semi-bold"> {{ ocds.tender.status }} </p>
     </div>
     <div class="col-md-3">
         <p class="small">Monto</p>
@@ -112,7 +112,7 @@
                     {{/ocds.tender.milestones }}
                 {{else}}
                     <p>
-                        <strong>No aplica</strong>
+                        <strong>Concluido</strong>
                     </p>
                 {{/if}}
 

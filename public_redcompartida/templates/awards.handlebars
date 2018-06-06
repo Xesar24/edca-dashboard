@@ -17,11 +17,11 @@
 
 <div class="row contract-stats">
     <div class="col-md-3">
-        <p class="small">Tipo</p>
-        {{#if ocds.tender.procurementmethod}}
-            <p class="semi-bold">{{ocds.tender.procurementmethod }}</p>
+        <p class="small">Estado</p>
+        {{#if ocds.tender.status}}
+            <p class="semi-bold">{{ocds.tender.status }}</p>
         {{else}}
-            En proceso
+            No aplica
         {{/if}}
     </div>
 

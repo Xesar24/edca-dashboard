@@ -49,7 +49,11 @@
                             {{#ifCond status 'scheduled'}}
                                 <li>Estado: Programado</li>
                             {{else}}
-                                <li>Estado: {{status}}</li>
+                                {{#ifCond status 'met'}}
+                                    <li>Estado: Cumplido</li>
+                                {{else}}
+                                    <li>Estado: {{status}}</li>
+                                {{/ifCond}}
                             {{/ifCond}}
                         </ul>
                     {{/implementation.milestones }}

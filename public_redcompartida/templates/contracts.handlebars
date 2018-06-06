@@ -17,7 +17,11 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Estado</p>
-        <p class="semi-bold"> {{ ocds.tender.status }} </p>
+        {{#ifCond contract.status 'active'}}
+            <p class="semi-bold">Activo</p>
+        {{else}}
+            <p class="semi-bold"> {{ contract.status}} </p>
+        {{/ifCond}}
     </div>
     <div class="col-md-3">
         <p class="small">Monto</p>

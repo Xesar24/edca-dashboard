@@ -77,7 +77,7 @@
                     {{#ocds.tender.items}}
                         <strong> {{description}}  </strong>
                         <ul>
-                            <li>id: {{id}} </li>
+                            <li>Id: {{id}} </li>
                             <li>Unidad: {{unit.name}} </li>
                             <li>Cantidad: {{quantity}} </li>
                         </ul>
@@ -115,8 +115,8 @@
                         </ul>
                     {{/ocds.tender.milestones }}
                 {{else}}
-                    <p>
-                        <strong>Concluido</strong>
+                    <p class="semi-bold">
+                        Concluido
                     </p>
                 {{/if}}
 

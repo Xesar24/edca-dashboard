@@ -81,17 +81,23 @@
                 {{#if implementation.transactions}}
                     {{#implementation.transactions}}
                         <!-- <strong> Transacción {{id}} </strong> -->
-                        <ul>
-                            <li>Origen: {{source}}</li>
-                            <li>Fecha de implementación: {{ date }}</li>
-                            <li>Monto: {{value.amount }}</li>
-                            <li>Moneda: {{ value.currency }}</li>
-                        </ul>
-
+                        {{#if implementation.transactions}}
+                                <!-- <strong> Transacción {{id}} </strong> -->
+                                <ul>
+                                    <li>Origen: {{source}}</li>
+                                    <li>Fecha de implementación: {{ date }}</li>
+                                    <li>Monto: {{value.amount }}</li>
+                                    <li>Moneda: {{ value.currency }}</li>
+                                </ul>
+                        {{else}}
+                            <p class="semi-bold">
+                                No aplica, por tratarse de una Asociación Público-Privada (APP) autofinanciada, la cual es definida como un proyecto cuyos recursos para su desarrollo y ejecución provienen en su totalidad de aportaciones distintas a numerario (Artículo 3, inciso c del Reglamento de la Ley Federal de APP) este proyecto no cuenta con una fuente de recursos presupuestaria
+                            </p>
+                        {{/if}}
                     {{/implementation.transactions}}
                 {{else}}
-                    <p>
-                        <strong>En proceso</strong>
+                    <p class="semi-bold">
+                        En proceso
                     </p>
                 {{/if}}
             </div>

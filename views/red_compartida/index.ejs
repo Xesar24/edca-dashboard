@@ -258,7 +258,7 @@
     axios.all([ getOCDS(), getLinks()]).then(axios.spread(function( ocds, links ){
 
         var title = ocds.data.releases[0].contracts[0].title;
-        title = (title.length < 251)?title:title.substring(0,249).trim() + '...';
+        title = (title.length < 320)?title:title.substring(0,319).trim() + '...';
 
         $("#contract_title").text(title);
 

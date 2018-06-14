@@ -1,42 +1,44 @@
 <div class="row contract-stats">
-    <div class="col-md-3">
+    <div class="col-md-2">
         <p class="small">Etapa</p>
-        <p><strong>Planeación</strong></p>
+        <p class="semi-bold">Planeación</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
         <p class="small">Identificador de presupuesto</p>
         <p class="semi-bold"> {{ ocds.planning.budget.id }} </p>
     </div>
-    <div class="col-md-3">
-        <p class="small">Tipo</p>
-        <p class="semi-bold"> {{ ocds.tender.procurementMethod}} </p>
+    <div class="col-md-2">
+        <p class="small">Estado</p>
+        {{#ifCond ocds.tender.status 'complete'}}
+            <p class="semi-bold">Concluido</p>
+        {{else}}
+            <p class="semi-bold"> {{ ocds.tender.status}} </p>
+        {{/ifCond}}
     </div>
-    <div class="col-md-3">
+    <div class="col-md-6">
         <p class="small">Descripción</p>
         <p class="semi-bold"> {{ ocds.planning.budget.description}} </p>
     </div>
 </div>
 <div class="row contract-stats">
-    <div class="col-md-3">
+    <div class="col-md-6">
         <p class="small">Monto</p>
         {{#if ocds.planning.budget.value.amount}}
-            <p><strong>{{format_amount ocds.planning.budget.value.amount}}</strong></p>
+            <p>{{format_amount ocds.planning.budget.value.amount}}</p>
         {{else}}
-            <p>
-                <strong>En proceso</strong>
-            </p>
+            <p class="semi-bold">No aplica, por tratarse de una Asociación Público-Privada (APP) autofinanciada, la cual es definida como un proyecto cuyos recursos para su desarrollo y ejecución provienen en su totalidad de aportaciones distintas a numerario (Artículo 3, inciso c del Reglamento de la Ley Federal de APP) este proyecto no cuenta con una fuente de recursos presupuestaria.</p>
         {{/if}}
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
         <p class="small">Moneda </p>
         <p class="semi-bold"> {{ ocds.planning.budget.value.currency }}</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
         <p class="small">Proyecto</p>
         <p class="semi-bold"> {{ ocds.planning.budget.project }}</p>
     </div>
-    <div class="col-md-3">
-        <p class="small">ID de proyecto</p>
+    <div class="col-md-2">
+        <p class="small">Id del proyecto</p>
         <p class="semi-bold"> {{ ocds.planning.budget.projectID}} </p>
     </div>
 </div>
@@ -79,7 +81,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/ocds.planning.documents}}
                 {{else}}

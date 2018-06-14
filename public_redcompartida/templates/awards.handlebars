@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Etapa</p>
-        <p><strong>Adjudicación</strong></p>
+        <p class="semi-bold">Adjudicación</p>
     </div>
     <div class="col-md-3">
         <p class="small">Identificador</p>
@@ -17,23 +17,28 @@
 
 <div class="row contract-stats">
     <div class="col-md-3">
-        <p class="small">Tipo</p>
-        {{#if ocds.tender.procurementmethod}}
-            <p class="semi-bold">{{ocds.tender.procurementmethod }}</p>
+        <p class="small">Estado</p>
+        <!-- {{#if ocds.tender.status}}
+            <p class="semi-bold">{{award.status }}</p>
         {{else}}
-            En proceso
-        {{/if}}
+            No aplica
+        {{/if}} -->
+        {{#ifCond award.status 'active'}}
+            <p class="semi-bold">Activo</p>
+        {{else}}
+            <p class="semi-bold"> {{ award.status}} </p>
+        {{/ifCond}}
     </div>
 
     <div class="col-md-3">
         <p class="small">Monto</p>
-        <p><strong>
+        <p class="semi-bold">
             {{#if award.value.amount}}
                 {{format_amount award.value.amount }}
             {{else}}
-                En proceso
+                No aplica
             {{/if}}
-        </strong></p>
+        </p>
         <p class="small">Moneda </p>
         <p class="semi-bold">{{ award.value.currency }}</p>
     </div>
@@ -114,7 +119,7 @@
                     {{#award.items}}
                         <strong> {{description}}  </strong>
                         <ul>
-                            <li>id: {{id}} </li>
+                            <li>Id: {{id}} </li>
                             <li>Unidad: {{unit.name}} </li>
                             <li>Cantidad: {{quantity}} </li>
                         </ul>
@@ -143,7 +148,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/award.documents}}
                 {{else}}

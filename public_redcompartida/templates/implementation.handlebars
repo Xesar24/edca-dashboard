@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-12">
         <p class="small">Etapa</p>
-        <p><strong>Implementación</strong></p>
+        <p class="semi-bold">Implementación</p>
     </div>
 </div>
 <div class="row contract-stats">
@@ -42,17 +42,25 @@
                     {{#implementation.milestones }}
                         <strong> {{title}} </strong>
                         <ul>
-                            <li>{{id}}</li>
-                            <li>{{description}} </li>
-                            <li>{{dueDate}} </li>
-                            <li>{{dateModified}} </li>
-                            <li>{{status}} </li>
+                            <!-- <li>{{id}}</li> -->
+                            <li>Descripción: {{description}} </li>
+                            <li>Fecha de vencimiento: {{dueDate}} </li>
+                            <!-- <li>{{dateModified}} </li> -->
+                            {{#ifCond status 'scheduled'}}
+                                <li>Estado: Programado</li>
+                            {{else}}
+                                {{#ifCond status 'met'}}
+                                    <li>Estado: Cumplido</li>
+                                {{else}}
+                                    <li>Estado: {{status}}</li>
+                                {{/ifCond}}
+                            {{/ifCond}}
                         </ul>
                     {{/implementation.milestones }}
                 {{else}}
                     <p>
                         <strong>
-                            En proceso
+                            No aplica
                         </strong>
                     </p>
                 {{/if}}
@@ -72,18 +80,24 @@
 
                 {{#if implementation.transactions}}
                     {{#implementation.transactions}}
-                        <strong> Transacción {{id}} </strong>
-                        <ul>
-                            <li>Origen: {{source}}</li>
-                            <li>Fecha de implementación: {{ date }}</li>
-                            <li>Monto: {{value.amount }}</li>
-                            <li>Moneda: {{ value.currency }}</li>
-                        </ul>
-
+                        <!-- <strong> Transacción {{id}} </strong> -->
+                        {{#if implementation.transactions}}
+                                <!-- <strong> Transacción {{id}} </strong> -->
+                                <ul>
+                                    <li>Origen: {{source}}</li>
+                                    <li>Fecha de implementación: {{ date }}</li>
+                                    <li>Monto: {{value.amount }}</li>
+                                    <li>Moneda: {{ value.currency }}</li>
+                                </ul>
+                        {{else}}
+                            <p class="semi-bold">
+                                No aplica, por tratarse de una Asociación Público-Privada (APP) autofinanciada, la cual es definida como un proyecto cuyos recursos para su desarrollo y ejecución provienen en su totalidad de aportaciones distintas a numerario (Artículo 3, inciso c del Reglamento de la Ley Federal de APP) este proyecto no cuenta con una fuente de recursos presupuestaria
+                            </p>
+                        {{/if}}
                     {{/implementation.transactions}}
                 {{else}}
-                    <p>
-                        <strong>En proceso</strong>
+                    <p class="semi-bold">
+                        En proceso
                     </p>
                 {{/if}}
             </div>
@@ -104,7 +118,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/implementation.documents}}
                 {{else}}

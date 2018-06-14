@@ -1,7 +1,7 @@
 <div class="row contract-stats">
     <div class="col-md-3">
         <p class="small">Etapa</p>
-        <p><strong>Licitación</strong></p>
+        <p class="semi-bold">Licitación</p>
     </div>
     <div class="col-md-3">
         <p class="small">Identificador</p>
@@ -14,16 +14,20 @@
 </div>
 <div class="row contract-stats">
     <div class="col-md-3">
-        <p class="small">Tipo</p>
-        <p class="semi-bold"> {{ ocds.tender.procurementmethod }} </p>
+        <p class="small">Estado</p>
+        {{#ifCond ocds.tender.status 'complete'}}
+            <p class="semi-bold">Concluido</p>
+        {{else}}
+            <p class="semi-bold"> {{ ocds.tender.status}} </p>
+        {{/ifCond}}
     </div>
     <div class="col-md-3">
         <p class="small">Monto</p>
         {{#if ocds.tender.value.amount}}
-            <p><strong>{{format_amount ocds.tender.value.amount }}</strong></p>
+            <p class="semi-bold"><strong>{{format_amount ocds.tender.value.amount }}</strong></p>
         {{else}}
-            <p>
-                <strong>En proceso</strong>
+            <p class="semi-bold">
+              No aplica
             </p>
         {{/if}}
 
@@ -73,7 +77,7 @@
                     {{#ocds.tender.items}}
                         <strong> {{description}}  </strong>
                         <ul>
-                            <li>id: {{id}} </li>
+                            <li>Id: {{id}} </li>
                             <li>Unidad: {{unit.name}} </li>
                             <li>Cantidad: {{quantity}} </li>
                         </ul>
@@ -111,8 +115,8 @@
                         </ul>
                     {{/ocds.tender.milestones }}
                 {{else}}
-                    <p>
-                        <strong>En proceso</strong>
+                    <p class="semi-bold">
+                        Concluido
                     </p>
                 {{/if}}
 
@@ -122,7 +126,7 @@
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingThree">
             <h4 class="panel-title">
-                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">                    
+                <a class="accordion-toggle collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     Documentos
                 </a>
             </h4>
@@ -135,7 +139,7 @@
                         <strong>{{ title }}</strong>
                         <ul>
                             <li> Descripción: {{ description }}</li>
-                            <li> URL: {{ url }}</li>
+                            <li> URL: <a href="{{ url }}" target="_blank">{{ url }}</a></li>
                         </ul>
                     {{/ocds.tender.documents}}
                 {{else}}

@@ -144,7 +144,12 @@
 </div>
 
 <div class="container statistics">
-
+  <div class="row">
+  <div class="col-md-12">
+      <!-- <h1>Procedimiento y destino de la contratación</h1> -->
+      <p style="text-align: right; margin-top: 10px"><strong><a href="http://gacmda.gacm.mx:8880/files/GACM/GACM/politica_de_publicacion.pdf" target="_blank">Política de Publicación</a></strong></p>
+  </div>
+  </div>
 <div class="row">
 <div class="col-md-12">
     <h1>Procedimiento y destino de la contratación</h1>
@@ -401,14 +406,14 @@
             <form class="form-inline search-form" >
                 <input type="text" id="keyword" class="form-control" placeholder="Buscar contrataciones abiertas">
 
-                <select id="filter" class="form-control bootstrap-select">
+                <select id="filter" class="form-control">
                     <option value="Todo">Mostrar todo </option>
                     <%for ( var i=0; i< metadata.total_procedimiento.length;i++){%>
                     <option value="<%= metadata.total_procedimiento[i].procurementmethod %>"><%= metadata.total_procedimiento[i].procurementmethod %></option>
                     <%}%>
                 </select>
 
-                <select id="orderby" class="form-control bootstrap-select">
+                <select id="orderby" class="form-control">
                     <option value="value_amount">Ordenar por monto</option>
                     <option value="title">Ordenar por nombre</option>
                     <option value="datesigned">Ordenar por fecha</option>

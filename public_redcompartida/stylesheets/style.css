@@ -10,6 +10,13 @@
 /*********************************
     FONTS STYLES
 *********************************/
+.data-table table>tbody>tr {
+    cursor: auto;
+}
+
+.dtConjunto {
+    cursor: pointer;
+}
 
 h3 {
   font-size: 26px;
@@ -24,6 +31,7 @@ h3 {
   color: #fff;
   text-transform: uppercase;
   border-radius: 0;
+  cursor: pointer;
 }
 
 .label[data-format="csv"], .label[data-format="CSV"] {

@@ -1,11 +1,14 @@
 {
-  "json":{
+  "json": {
     "url": "https://drive.google.com/uc?export=download&id=0B5wc002kIlpheVV3a29YbFJaSUU"
   },
-  "xlsx":{
+  "xlsx": {
     "url": "https://drive.google.com/uc?export=download&id=0B5wc002kIlphREtURm1xSWctVFU"
   },
-  "pdf":{
+  "xlsxAPP": {
+    "url": "https://docs.google.com/spreadsheets/d/1I_lfZhPntirPa1esKUperE_ORzGvB1fmMMb42i0Ayw4/export?format=xlsx"
+  },
+  "pdf": {
     "url": "http://promtel.gob.mx/Compranet/Contrato-Version-Publica.pdf.zip"
   }
 }

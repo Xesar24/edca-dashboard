@@ -5,7 +5,7 @@
     "Objeto del Contrato",
     "Contratista",
     "Importe comprometido",
-    "Importe pagado al primer trimestre de 2018",
+    "Importe pagado al segundo trimestre de 2018",
     "Avance físico",
     "Avance financiero"
   ],
@@ -18,7 +18,7 @@
           "Nivelación y Limpieza",
           "COCONAL S.A. P. I. DE CV",
           "$1,902,808,440.74",
-          "$1,862,559,635.07 ",
+          "$1,975,982,574.64",
           "100.00%",
           "97.88%"
         ],
@@ -58,9 +58,9 @@
           "Remoción de Escombros",
           "PARTICIPACIÓN CONJUNTA: OMEGA CONSTRUCCIONES INDUSTRIALES, SA DE CV, CALZADA CONSTRUCCIONES, SA DE CV Y CONSTRUCCIONES Y DRAGADOS DEL SURESTE, SA DE CV",
           "$891,806,070.45",
-          "$873,643,656.28",
+          "$887,765,403.13",
           "100.00%",
-          "99.97%"
+          "99.65%"
         ],
         [
           6,
@@ -88,9 +88,9 @@
           "Desarrollo de ingeniería y construcción de subestaciones y acometida eléctrica",
           "PROYECTOS Y CONSTRUICCIONES URISA S.A. DE C.V.",
           "$1,114,845,394.31",
-          "$644,770,858.60",
-          "59.77%",
-          "57.84%"
+          "$708,781,184.88",
+          "68.66%",
+          "63.58%"
         ]
       ]
     },
@@ -103,9 +103,9 @@
           "Pilotes de Cimentación",
           "GAMI INGENIERÍA E INSTALACIONES S.A. DE C.V.",
           "$999,892,819.96",
-          "$906,172,621.53",
-          "96.36%",
-          "90.63%"
+          "$971,334,908.63",
+          "97.20%",
+          "96.14%"
         ],
         [
           2,
@@ -113,9 +113,9 @@
           "Losa de cimentación ETP",
           "ICA CONSTRUTORA DE INFRAESTRUCTURA S.A. DE C.V.; IMPULSORA DE DESARROLLO INTEGRAL S.A. DE C.V.; CONSTRUCCIONES Y TRITURACIONES S.A. DE C.V.; CONTROLADORA DE OPERACIONES DE INFRAESTRUCTURA S.A. DE C.V.; CONSTRUCTORA EL CAJÓN S.A. DE C.V.",
           "$7,555,647,477.04",
-          "$2,809,005,944.45 ",
-          "50.00%",
-          "31.75%"
+          "$4,656,537,148.10",
+          "70.00%",
+          "56.18%"
         ],
         [
           3,
@@ -123,7 +123,7 @@
           "Edificio terminal de pasajeros",
           "CONSTRUCTORA TERMINAL VALLE DE MÉXICO S.A. DE C.V.",
           "$84,828,377,320.13",
-          "$3,282,049,033.56",
+          "$5,624,583,206.93",
           "3.80%",
           "3.87%"
         ],
@@ -133,9 +133,9 @@
           "Torre de control",
           "CONSTRUCCIONES ALDESEM S.A. DE C.V. ALDESA CONSTRUCCIONES S.A. JAGUAR INGENIEROS CONSTRUCTORES S.A. DE C.V.",
           "$1,242,171,349.64",
-          "$239,437,227.17",
-          "18.90%",
-          "19.08%"
+          "$305,284,830.50",
+          "25.68%",
+          "18.33%"
         ],
         [
           5,
@@ -143,9 +143,19 @@
           "Losa de cimentación CTT",
           "SACYR EPCCOR NAICM S.A.P.I. DE C.V.",
           "$1,399,983,017.99",
-          "$574,707,840.25",
-          "50.92%",
-          "33.47%"
+          "$1,043,788,901.88",
+          "40.34%*",
+          "37.28%"
+        ],
+        [
+          6,
+          "LPI-OP-DCAGI-SC-006-18",
+          "Plataformas de la Terminal, Edificio Satélite, Terminal de Carga y Mantenimiento de Aeronaves del Nuevo Aeropuerto Internacional de la Ciudad de Méxic",
+          "ICA Edificio Satélite S.A. de C.V.",
+          "$7,145,534,912.27",
+          "$0.00",
+          "0.03%",
+          "0.00%"
         ]
       ]
     },
@@ -158,9 +168,9 @@
           "Pista 2",
           "COCONAL S.A.P.I, CONSTRUCTORA Y PAVIMENTADORA VISE S.A. DE C.V.",
           "$7,926,299,964.90",
-          "$5,592,267,820.43 ",
-          "63.95%",
-          "63.36%"
+          "$6,145,469,056.25",
+          "69.20%",
+          "65.24%"
         ],
         [
           2,
@@ -168,9 +178,29 @@
           "Pista 3",
           "OPERADORA CICSA S.A. DE C.V., CONSTRUCTORA Y EDIFICADORA GIA+A S.A. DE C.V., PROMOTORA Y DESARROLLADORA MEXICANA S.A. DE C.V., LA PENINSULAR COMPAÑÍA CONSTRUCTORA S.A. DE C.V.",
           "$7,359,204,570.23",
-          "$4,571,135,623.81",
-          "50.00%",
-          "46.87%"
+          "$5,470,897,331.13",
+          "51.67%",
+          "57.32%"
+        ],
+        [
+          3,
+          "Convenio Específico de Colaboración (Pista 6) AD-OP-CONV-DCAGI-SC-006-17",
+          "Pista 6",
+          "SEDENA",
+          "$2,346,287,623.44",
+          "$2,346,287,623.44",
+          "60.87%",
+          "100.00%"
+        ],
+        [
+          4,
+          "LPI-OP-DCAGI-SC-001-18",
+          "Construcción de la Red de Distribución Eléctrica de Media Tensión en 23KV y Subestaciones",
+          "ICA Fluor Daniel, S. de R.L. de C.V.; Industria del Hierro S.A. de C.V.",
+          "$3,656,005,433.07",
+          "$192,496,168.74",
+          "0.01%",
+          "0.00%"
         ]
       ]
     }
